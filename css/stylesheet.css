@@ -118,7 +118,8 @@ NAV BAR
 #home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
 	height:40px;
 	width: 40px;
-	margin: 5px;
+	margin: 2px;
+	margin-top: 5px;
 }
 
 
@@ -153,5 +154,11 @@ Song Pages
 
 .player-list {
 	margin: 10px;
+}
+
+.box {
+	height: 150px;
+	width: 100%;
+	border: 1px solid black;
 }
 
