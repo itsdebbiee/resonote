@@ -46,7 +46,7 @@ a:hover {
 	width: 100%;
 	background: #F0F0F0;
 	border: 1px solid #CCC;
-	height: 500px;
+	height: 700px;
 	margin: 90px auto;
 	margin-bottom: 80px;
 }
@@ -149,5 +149,9 @@ Song Pages
 	height: 500px;
 	margin: 30px auto;
 	margin-bottom: 80px;
+}
+
+.player-list {
+	margin: 10px;
 }
 
