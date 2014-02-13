@@ -1,0 +1,153 @@
+/*
+Authors: Debbie Pan, Troy Campbell, Arielle Marom;
+COGS 120 Winter 2014
+
+TABLE OF CONTENTS
+
+
+*/
+
+/*
+1. General
+====================================== */
+html, body {
+	cursor: crosshair;
+	font-family: Lato, sans-serif;
+}
+
+a:hover {
+	cursor: crosshair;
+}
+
+.container {
+	width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.header {
+	height: 70px;
+	background: #11A9BA;
+	border: 1px solid #CCC;
+	width: 100%;
+	top: 0px;
+	position: fixed;
+	z-index: 10;
+}
+
+#resonote-logo {
+	height: 50px;
+	width: 90px;
+	margin-top: .7%;
+}
+
+.content {
+	width: 100%;
+	background: #F0F0F0;
+	border: 1px solid #CCC;
+	height: 500px;
+	margin: 90px auto;
+	margin-bottom: 80px;
+}
+
+.shadow-bottom-nav {
+  -moz-box-shadow:    3px -3px 5px 2px #ccc;
+  -webkit-box-shadow: 3px -3px 5px 2px #ccc;
+  box-shadow:         3px -3px 5px 2px #ccc;
+}
+
+/*
+NAV BAR
+====================================== */
+
+#bottom-nav {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	z-index: 10;
+	width: 100%;
+	background: #11A9BA;
+}
+
+#bottom-nav .nav-bar {
+	list-style: none;
+}
+
+#bottom-nav .nav-bar li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav-button-home:hover {
+	opacity: 0.7;
+}
+
+.nav-button-wb:hover {
+	opacity: 0.7;
+}
+
+.nav-button-flag:hover {
+	opacity: 0.7;
+}
+
+.nav-button-playlist:hover {
+	opacity: 0.7;
+}
+
+.nav-button-settings:hover {
+	opacity: 0.7;
+}
+
+.nav-bar .nav-button-home a {
+	background:url("img/homeicon.png") no-repeat 0px -2px transparent;
+	z-index: 15;
+}
+
+.nav-bar .nav-button-search a {
+	background:url("/img/searchicon.png") no-repeat 0px -2px transparent;
+	z-index: 15;
+}
+
+.nav-bar .nav-button-address a {
+	background:url("img/addressbookicon.png") no-repeat 0px -2px transparent;
+	z-index: 15;
+}
+
+#home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
+	height:40px;
+	width: 40px;
+	margin: 5px;
+}
+
+
+
+
+/*
+Song Pages
+====================================== */
+.scroll-box {
+	overflow: scroll;
+	height: 300px;
+	width: 300px;
+	display: block;
+}
+
+.has-tip:hover {
+	color: #cc99ff;
+}
+
+.soundcloud-player {
+	margin-top: 90px;
+}
+
+.content-songs {
+	width: 100%;
+	background: #F0F0F0;
+	border: 1px solid #CCC;
+	height: 500px;
+	margin: 30px auto;
+	margin-bottom: 80px;
+}
+
