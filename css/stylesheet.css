@@ -156,15 +156,15 @@ Song Pages
 	margin: 10px;
 }
 
-<<<<<<< HEAD
+
 .box {
 	height: 150px;
 	width: 100%;
 	border: 1px solid black;
-=======
+}
+
 .next-button {
+	height: 40px;
 	width: 40px;
-	width: 40px;
->>>>>>> 688cd642a6c41c9fb115c0715c3feb92f90d9d38
 }
 
