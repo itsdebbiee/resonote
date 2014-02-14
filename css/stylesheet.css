@@ -157,7 +157,21 @@ NAV BAR
 	padding-top: 5px;
 }
 
+/*
+Word Bank
+====================================== */
+.content-wb {
+	width: 100%;
+	background: #F0F0F0;
+	border: 1px solid #CCC;
+	height: 700px;
+	margin: 20px auto;
+	margin-bottom: 80px;
+}
 
+.wb-title {
+	margin-top: 90px;
+}
 
 
 /*
