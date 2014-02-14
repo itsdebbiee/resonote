@@ -57,6 +57,25 @@ a:hover {
   box-shadow:         3px -3px 5px 2px #ccc;
 }
 
+.center {
+	margin: auto;
+	display: block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*
+HOME
+====================================== */
+.galit {
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	border-radius: 250px;
+	border: 2px solid #ccc;
+}
+
 /*
 NAV BAR
 ====================================== */
