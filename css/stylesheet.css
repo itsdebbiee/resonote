@@ -28,7 +28,7 @@ a:hover {
 
 .header {
 	height: 70px;
-	background: #11A9BA;
+	background: #57b5b8;
 	border: 1px solid #CCC;
 	width: 100%;
 	top: 0px;
@@ -101,7 +101,7 @@ NAV BAR
 	height: 50px;
 	z-index: 10;
 	width: 100%;
-	background: #11A9BA;
+	background: #57b5b8;
 }
 
 #bottom-nav .nav-bar {
