@@ -66,6 +66,11 @@ a:hover {
 	text-align: center;
 }
 
+.nav-bar > .active > a {
+  color: #f5f5f5;
+  background-color: #008080;
+}
+
 /*
 HOME
 ====================================== */
@@ -152,7 +157,21 @@ NAV BAR
 	padding-top: 5px;
 }
 
+/*
+Word Bank
+====================================== */
+.content-wb {
+	width: 100%;
+	background: #F0F0F0;
+	border: 1px solid #CCC;
+	height: 700px;
+	margin: 20px auto;
+	margin-bottom: 80px;
+}
 
+.wb-title {
+	margin-top: 90px;
+}
 
 
 /*
@@ -193,13 +212,30 @@ Song Pages
 	border: 1px solid black;
 }
 
-.next-button {
+.back-button {
 	height: 40px;
 	width: 40px;
+	float: left;
 }
 
+.forward-button {
+	height: 40px;
+	width: 40px;
+	float: right;
+}
+
+<<<<<<< HEAD
 .frenchflag img {
 	height: 80px;
 	width: 100px;
 }
 
+=======
+.forward-button:hover {
+	opacity: 0.7;
+}
+
+.back-button:hover {
+	opacity: 0.7;
+}
+>>>>>>> 94c65538589bb0dcc178c6a9e522b358b25b3fb5
