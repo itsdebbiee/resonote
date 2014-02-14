@@ -76,6 +76,15 @@ HOME
 	border: 2px solid #ccc;
 }
 
+.content-home {
+	width: 100%;
+	background: #F0F0F0;
+	border: 1px solid #CCC;
+	height: 500px;
+	margin: 90px auto;
+	margin-bottom: 80px;
+}
+
 /*
 NAV BAR
 ====================================== */
@@ -96,7 +105,7 @@ NAV BAR
 
 #bottom-nav .nav-bar li {
 	display: inline;
-	padding: 0 5px;
+	padding: 0 2px;
 }
 
 
