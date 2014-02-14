@@ -244,3 +244,17 @@ Song Pages
 	margin-bottom: 4px;
 }
 
+.small-text {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.add-icon {
+	height:20px;
+	width:20px;
+	margin:3px;
+}
+
+.button {
+	background:#7bc5c7;
+}
