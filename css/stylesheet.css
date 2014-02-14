@@ -198,8 +198,22 @@ Song Pages
 	border: 1px solid black;
 }
 
-.next-button {
+.back-button {
 	height: 40px;
 	width: 40px;
+	float: left;
 }
 
+.forward-button {
+	height: 40px;
+	width: 40px;
+	float: right;
+}
+
+.forward-button:hover {
+	opacity: 0.7;
+}
+
+.back-button:hover {
+	opacity: 0.7;
+}
