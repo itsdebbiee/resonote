@@ -224,13 +224,11 @@ Song Pages
 	float: right;
 }
 
-<<<<<<< HEAD
 .frenchflag img {
 	height: 80px;
 	width: 100px;
 }
 
-=======
 .forward-button:hover {
 	opacity: 0.7;
 }
@@ -238,4 +236,4 @@ Song Pages
 .back-button:hover {
 	opacity: 0.7;
 }
->>>>>>> 94c65538589bb0dcc178c6a9e522b358b25b3fb5
+
