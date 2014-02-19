@@ -1,22 +1,17 @@
 /* Add new element into list */ 
 
-var data;
-$('#b1').click(function() {
-	$('#wait').show();
-	$.get("/data", callbackFn);
-	console.log('AJAX');
-})
+$(".add-to").click(f);
 
-function callbackFn(result) {
-	$('#wait').hide();
-	data= result['wordbank'] + "!";
-	$('.container').append(data);
-	console.log('its working')
+function f(e) {
+	e.preventDefault();
+
+	var target=$(this).closest(".wb");
+	var clone=target.clone()[0];
+	target.appendTo("#easy-wb")
 }
 
-/*adding html
-function addWord(result) {
-	console.log(result);
-	var projectHTML = ''
-}
-*/
+
+
+$(document).ready(function() {
+	$('.meep').fadeOut(1600, complete);
+});
