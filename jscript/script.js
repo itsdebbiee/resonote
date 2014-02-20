@@ -1,17 +1,17 @@
 /* Add new element into list */ 
 
-$(".add-to").click(f);
+$(document).ready(function() {
+	$(".add").click(f);
+});
 
 function f(e) {
 	e.preventDefault();
 
-	var target=$(this).closest(".wb");
+	var target=$(this).parent();
 	var clone=target.clone()[0];
-	target.appendTo("#easy-wb")
+	$("#easy-wb").append(clone);
+
+	return false;
 }
 
 
-
-$(document).ready(function() {
-	$('.meep').fadeOut(1600, complete);
-});

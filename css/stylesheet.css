@@ -19,13 +19,6 @@ a:hover {
 	cursor: crosshair;
 }
 
-.container {
-	width: 100%;
-    margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-}
-
 .header {
 	height: 70px;
 	background: #57b5b8;
@@ -34,6 +27,11 @@ a:hover {
 	top: 0px;
 	position: fixed;
 	z-index: 10;
+}
+
+.container {
+	margin-top: 70px;
+	display: block;
 }
 
 #resonote-logo {
@@ -151,9 +149,9 @@ NAV BAR
 }
 
 #home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
-	height:50px;
-	width: 50px;
-	padding: 4px;
+	height:40px;
+	width: 40px;
+	padding: 2px;
 	padding-top: 5px;
 }
 
