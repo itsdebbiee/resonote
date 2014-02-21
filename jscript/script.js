@@ -16,11 +16,23 @@ $('.add').live('click', function(e) {
 $('.add').live('click', function(e) {
 	e.preventDefault();
 
-	var targetFrench=$(this).closest(".french");
+	var targetFrench=$(".line").find(".french");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(cloneFrench);
 	console.log(targetFrench);
+	$("#easy-wb").append("<p>");
 	$("#easy-wb").append(cloneFrench);
+
+	$("#easy-wb").append("</br>");
+
+	var targetEng=$(this).siblings();
+	var cloneEng=targetEng.clone()[0];
+	console.log(cloneEng);
+	console.log(targetEng);
+	$("#easy-wb").append(cloneEng);
+	$("#easy-wb").append("</p>");
+
+	$("#easy-wb").append("<img class='delete' src='img/delete.png'/>");
 
 
 	return false;

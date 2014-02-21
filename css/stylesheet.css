@@ -263,6 +263,16 @@ Song Pages
 	display:none;
 }
 
+.delete {
+	display:inline-block;
+	height: 15px;
+	width: 15px;
+}
+
+.delete:hover {
+	opacity: .7;
+}
+
 /*
 TABS
 ====================================== */
