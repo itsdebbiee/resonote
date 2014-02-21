@@ -19,7 +19,7 @@ $('.add').live('click', function(e) {
 	var targetFrench=$(".line").find(".french");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
-	$("#easy-wb").append("<p>");
+	$("#easy-wb").append("<p class='wb'>");
 	$("#easy-wb").append(cloneFrench);
 
 	$("#easy-wb").append("</br>");
@@ -29,18 +29,16 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	$("#easy-wb").append("</p>");
-
 	$("#easy-wb").append("<img class='delete' src='img/delete.png'/>");
-
-
+	$("#easy-wb").append("</p>");
+	
 	return false;
+	
 });
 
 $(document).ready(function() {
 	$(".delete").click(function() {
-		var remove=$(".delete").parent();
-		$(remove).fadeOut('fast');
+		$(".wb").hide('fast');
 		
 	});
 });
