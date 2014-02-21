@@ -18,14 +18,13 @@ $('.add').live('click', function(e) {
 
 	var targetFrench=$(".line").find(".french");
 	var cloneFrench=targetFrench.clone()[0];
-	console.log(cloneFrench);
 	console.log(targetFrench);
 	$("#easy-wb").append("<p>");
 	$("#easy-wb").append(cloneFrench);
 
 	$("#easy-wb").append("</br>");
 
-	var targetEng=$(this).siblings();
+	var targetEng=$(".line").find(".eng");
 	var cloneEng=targetEng.clone()[0];
 	console.log(cloneEng);
 	console.log(targetEng);
@@ -38,18 +37,13 @@ $('.add').live('click', function(e) {
 	return false;
 });
 
-/*function f(e) {
-	e.preventDefault();
-
-	var target=$(this).parent();
-	var clone=target.clone()[0];
-	console.log(clone);
-	console.log(target);
-	$("#easy-wb").append(clone);
-
-
-	return false;
-}*/
+$(document).ready(function() {
+	$(".delete").click(function() {
+		var remove=$(".delete").parent();
+		$(remove).fadeOut('fast');
+		
+	});
+});
 
 
 /* Song Pages */
