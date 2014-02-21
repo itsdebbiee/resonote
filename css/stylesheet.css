@@ -29,15 +29,17 @@ a:hover {
 	z-index: 10;
 }
 
-.container {
+.contain {
 	margin-top: 70px;
 	display: block;
 }
 
 #resonote-logo {
-	height: 50px;
-	width: 90px;
-	margin-top: .7%;
+	height: 55px;
+	width: 100px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
 }
 
 .mycontent {
@@ -83,7 +85,7 @@ HOME
 	width: 100%;
 	background: #F0F0F0;
 	border: 1px solid #CCC;
-	height: 500px;
+	height: 800px;
 	margin: 90px auto;
 	margin-bottom: 80px;
 }
@@ -111,7 +113,9 @@ NAV BAR
 	padding: 0 2px;
 }
 
-
+.navbar-fixed-bottom, .navbar-fixed-top {
+	background: #57b5b8;
+}
 
 .nav-button-home:hover {
 	opacity: 0.7;
@@ -149,10 +153,8 @@ NAV BAR
 }
 
 #home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
-	height:40px;
-	width: 40px;
-	padding: 2px;
-	padding-top: 5px;
+	height:30px;
+	width: 30px;
 }
 
 /*
@@ -253,8 +255,25 @@ Song Pages
 	margin:3px;
 }
 
-.button {
+.btn {
 	background:#7bc5c7;
 }
 
+.none {
+	display:none;
+}
+
+/*
+TABS
+====================================== */
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
 
