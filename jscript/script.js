@@ -80,12 +80,12 @@ $(document).ready(function() {
 	$(".line a").popover({
 		html:true,
 });
-	$("#popup").click(function (e) {
+	$(".popup").click(function (e) {
 		e.stopPropagation();
 });
 	$(document).click(function (e) {
 		if (($('.popover').has(e.target).length == 0) || $(e.target).is('.close')) {
-		$('#popup').popover('hide');
+		$('.popup').popover('hide');
 	}
 });
 
