@@ -1,10 +1,6 @@
 /* Add new element into list */ 
 
-$(document).ready(function() {
-	$(".add").click(f);
-});
-
-function f(e) {
+$('.add').live('click', function(e) {
 	e.preventDefault();
 
 	var target=$(this).parent();
@@ -15,7 +11,20 @@ function f(e) {
 
 
 	return false;
-}
+});
+
+/*function f(e) {
+	e.preventDefault();
+
+	var target=$(this).parent();
+	var clone=target.clone()[0];
+	console.log(clone);
+	console.log(target);
+	$("#easy-wb").append(clone);
+
+
+	return false;
+}*/
 
 
 /* Song Pages */
