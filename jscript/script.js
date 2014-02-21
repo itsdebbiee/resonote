@@ -1,4 +1,4 @@
-/* Add new element into list */ 
+/* Add new element into list  
 
 $('.add').live('click', function(e) {
 	e.preventDefault();
@@ -8,6 +8,19 @@ $('.add').live('click', function(e) {
 	console.log(clone);
 	console.log(target);
 	$("#easy-wb").append(clone);
+
+
+	return false;
+});*/
+
+$('.add').live('click', function(e) {
+	e.preventDefault();
+
+	var targetFrench=$(this).closest(".french");
+	var cloneFrench=targetFrench.clone()[0];
+	console.log(cloneFrench);
+	console.log(targetFrench);
+	$("#easy-wb").append(cloneFrench);
 
 
 	return false;
