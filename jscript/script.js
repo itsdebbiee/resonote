@@ -36,6 +36,53 @@ $('.add').live('click', function(e) {
 	
 });
 
+$('.add-int').live('click', function(e) {
+	e.preventDefault();
+
+	var targetFrench=$(".line-int").find(".french-int");
+	var cloneFrench=targetFrench.clone()[0];
+	console.log(targetFrench);
+	$("#int-wb").append("<p class='wb-int'>");
+	$("#int-wb").append(cloneFrench);
+
+	$("#int-wb").append("</br>");
+
+	var targetEng=$(".line-int").find(".eng-int");
+	var cloneEng=targetEng.clone()[0];
+	console.log(cloneEng);
+	console.log(targetEng);
+	$("#int-wb").append(cloneEng);
+	$("#int-wb").append("<img class='delete' src='img/delete.png'/>");
+	$("#int-wb").append("</p>");
+	
+	return false;
+	
+});
+
+$('.add-exp').live('click', function(e) {
+	e.preventDefault();
+
+	var targetFrench=$(".line-exp").find(".french-exp");
+	var cloneFrench=targetFrench.clone()[0];
+	console.log(targetFrench);
+	$("#exp-wb").append("<p class='wb-exp'>");
+	$("#exp-wb").append(cloneFrench);
+
+	$("#exp-wb").append("</br>");
+
+	var targetEng=$(".line-exp").find(".eng-exp");
+	var cloneEng=targetEng.clone()[0];
+	console.log(cloneEng);
+	console.log(targetEng);
+	$("#exp-wb").append(cloneEng);
+	$("#exp-wb").append("<img class='delete' src='img/delete.png'/>");
+	$("#exp-wb").append("</p>");
+	
+	return false;
+	
+});
+
+
 $(document).ready(function() {
 	$(".delete").click(function() {
 		$(".wb").hide('fast');
@@ -106,6 +153,13 @@ $(document).ready(function() {
 	$(".line a").popover({
 		html:true,
 });
+	$(".line-int a").popover({
+		html:true,
+});
+	$(".line-exp a").popover({
+		html:true,
+});
+
 	$(".popup").click(function (e) {
 		e.stopPropagation();
 });
@@ -117,7 +171,14 @@ $(document).ready(function() {
 
 	$(".line a").click(function(e) {
 		e.preventDefault();
-	});
+});
+	$(".line-int a").click(function(e) {
+		e.preventDefault();
+});
+	$(".line-exp a").click(function(e) {
+		e.preventDefault();
+});
+
 });
 
 
