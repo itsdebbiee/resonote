@@ -9,12 +9,16 @@ function f(e) {
 
 	var target=$(this).parent();
 	var clone=target.clone()[0];
+	console.log(clone);
+	console.log(target);
 	$("#easy-wb").append(clone);
+
 
 	return false;
 }
 
 
+/* Song Pages */
 $(document).ready(function() {
 	$("#ouest").click(function() {
 		$("#ouest-reveal").fadeIn('fast');
@@ -73,12 +77,23 @@ $(document).ready(function() {
 /* Popover */
 
 $(document).ready(function() {
-	$(".line a").popover({html:true});
+	$(".line a").popover({
+		html:true,
+});
+	$("#popup").click(function (e) {
+		e.stopPropagation();
+});
+	$(document).click(function (e) {
+		if (($('.popover').has(e.target).length == 0) || $(e.target).is('.close')) {
+		$('#popup').popover('hide');
+	}
+});
 
 	$(".line a").click(function(e) {
 		e.preventDefault();
 	});
 });
+
 
 
 
