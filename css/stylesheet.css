@@ -266,7 +266,7 @@ Song Pages
 	display:none;
 }
 
-.delete {
+.delete-adv, .delete-int, .delete-beg {
 	display:inline-block;
 	height: 15px;
 	width: 15px;

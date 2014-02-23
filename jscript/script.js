@@ -13,6 +13,8 @@ $('.add').live('click', function(e) {
 	return false;
 });*/
 
+/* Add to beginner wordbank */ 
+
 $('.add').live('click', function(e) {
 	e.preventDefault();
 
@@ -29,12 +31,14 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	$("#easy-wb").append("<img class='delete' src='img/delete.png'/>");
+	$("#easy-wb").append("<img class='delete-beg' src='img/delete.png'/>");
 	$("#easy-wb").append("</p>");
 	
 	return false;
 	
 });
+
+/* Add to intermediate wordbank */ 
 
 $('.add-int').live('click', function(e) {
 	e.preventDefault();
@@ -52,12 +56,14 @@ $('.add-int').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#int-wb").append(cloneEng);
-	$("#int-wb").append("<img class='delete' src='img/delete.png'/>");
+	$("#int-wb").append("<img class='delete-int' src='img/delete.png'/>");
 	$("#int-wb").append("</p>");
 	
 	return false;
 	
 });
+
+/* Add to advanced wordbank */ 
 
 $('.add-exp').live('click', function(e) {
 	e.preventDefault();
@@ -65,6 +71,7 @@ $('.add-exp').live('click', function(e) {
 	var targetFrench=$(".line-exp").find(".french-exp");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
+	console.log(cloneFrench);
 	$("#exp-wb").append("<p class='wb-exp'>");
 	$("#exp-wb").append(cloneFrench);
 
@@ -75,19 +82,32 @@ $('.add-exp').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#exp-wb").append(cloneEng);
-	$("#exp-wb").append("<img class='delete' src='img/delete.png'/>");
+	$("#exp-wb").append("<img class='delete-adv' src='img/delete.png'/>");
 	$("#exp-wb").append("</p>");
 	
 	return false;
 	
 });
 
+/* Clear advanced wordbank */ 
 
-$(document).ready(function() {
-	$(".delete").click(function() {
-		$(".wb").hide('fast');
+$(".delete-adv").live('click', function() {
+		$("#exp-wb").remove();
 		
-	});
+});
+
+/* Clear intermediate wordbank */ 
+
+$(".delete-int").live('click', function() {
+		$("#int-wb").remove();
+		
+});
+
+/* Clear beginner wordbank */ 
+
+$(".delete-beg").live('click', function() {
+		$("#easy-wb").remove();
+		
 });
 
 
