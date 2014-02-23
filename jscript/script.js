@@ -111,6 +111,20 @@ $(".delete-beg").live('click', function() {
 });
 
 
+/* Add sympa to playlist */ 
+
+$(".add-sympa").live('click', function(e) {
+	e.preventDefault();
+
+	var targetSong=$(".sound").find(".test-sympa");
+	var cloneSong=targetSong.clone()[0];
+	$("#myPlaylist").append(cloneSong);
+	return false;
+	
+});
+
+
+
 /* Song Pages */
 $(document).ready(function() {
 	$("#ouest").click(function() {
