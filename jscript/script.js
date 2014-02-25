@@ -89,6 +89,15 @@ $('.add-exp').live('click', function(e) {
 	
 });
 
+
+/* Add sympa to playlist */ 
+
+$('.testSympa').live('click', function(e) {
+	e.preventDefault();
+	$(".sound").clone().appendTo("#myPlaylist"); 
+	return false; 
+});
+
 /* Clear advanced wordbank */ 
 
 $(".delete-adv").live('click', function() {
@@ -111,17 +120,14 @@ $(".delete-beg").live('click', function() {
 });
 
 
-/* Add sympa to playlist */ 
+/* Clear playlist */ 
 
-$(".add-sympa").live('click', function(e) {
-	e.preventDefault();
+$(".delete-playlist").live('click', function() {
+		$("#myPlaylist").remove();
+		
+}); 
 
-	var targetSong=$(".sound").find(".test-sympa");
-	var cloneSong=targetSong.clone()[0];
-	$("#myPlaylist").append(cloneSong);
-	return false;
-	
-});
+
 
 
 
@@ -212,8 +218,17 @@ $(document).ready(function() {
 	$(".line-exp a").click(function(e) {
 		e.preventDefault();
 });
-
+  
 });
+
+
+/* Scroll to top of page on button click */
+
+$(document).ready(function(){
+    $('#wb-icon').on('click', function(){
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+    }); 
+});  
 
 
 
