@@ -18,7 +18,7 @@ $('.add').live('click', function(e) {
 $('.add').live('click', function(e) {
 	e.preventDefault();
 
-	var targetFrench=$(".line").find(".french");
+	var targetFrench=$(".line").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
 	$("#easy-wb").append("<p class='wb'>");
@@ -92,10 +92,18 @@ $('.add-exp').live('click', function(e) {
 
 /* Add sympa to playlist */ 
 
-$('.testSympa').live('click', function(e) {
-	e.preventDefault();
-	$(".sound").clone().appendTo("#myPlaylist"); 
-	return false; 
+$(document).ready(function() {
+	$(".testSympa").click(function(e) {
+		e.preventDefault();
+
+		$(".sound").clone().append("#myPlaylist");
+	});
+	
+	/*$('.testSympa').live('click', function(e) {
+		e.preventDefault();
+		$(".sound").clone().appendTo("#myPlaylist"); 
+		return false; 
+	});*/
 });
 
 /* Clear advanced wordbank */ 
@@ -116,6 +124,7 @@ $(".delete-int").live('click', function() {
 
 $(".delete-beg").live('click', function() {
 		$("#easy-wb").remove();
+
 		
 });
 
@@ -124,7 +133,8 @@ $(".delete-beg").live('click', function() {
 
 $(".delete-playlist").live('click', function() {
 		$("#myPlaylist").remove();
-		
+		$("#holdPlaylist").append("<div id='myPlaylist'>");
+		$("#holdPlaylist").append("</div"); 
 }); 
 
 
