@@ -22,6 +22,8 @@ var song4 = 0;  // "Quelqu'un a Touché Ma Femme"
 var song5 = 0;  // "Tous Les Mêmes"
 var song6 = 0;  // "Papaoutai"
 
+var songbankClear = 0; // Indicates if song bank is clear
+
 /* Add to beginner wordbank */ 
 
 $('.add').live('click', function(e) {
@@ -102,20 +104,111 @@ $('.add-exp').live('click', function(e) {
 /* Add sympa to playlist */ 
 
 $(document).ready(function() {
-	$(".testSympa").click(function(e) {
+	$(".add-sympa").click(function(e) {
 		e.preventDefault();
-	if (song2 != 0) {
+	if (song2 != 0) { // Prevent duplication 
 		return false
 	}
+	if (songbankClear != 0) { // Deletes "bank is clear message"
+		$("#emptySongList").remove();
+		songbankClear = 0; // Decrement 
+	}
 	});
-	$('.testSympa').live('click', function(e) {
+	$('.add-sympa').live('click', function(e) {
 		e.preventDefault();
-		$(".sound").clone().appendTo("#myPlaylist"); 
+		$(".sound-sympa").clone().appendTo("#myPlaylist"); 
 		song2++; 
 
 		return false; 
 	});
 });
+
+/* Add ma tete to playlist */ 
+$(document).ready(function() {
+	$(".add-matete").click(function(e) {
+		e.preventDefault();
+	if (song1 != 0) {  // Prevent duplication 
+		return false
+	}
+	});
+	$('.add-matete').live('click', function(e) {
+		e.preventDefault();
+		$(".sound-matete").clone().appendTo("#myPlaylist"); 
+		song1++; 
+
+		return false; 
+	});
+});
+
+/* Add ma tete to playlist */ 
+$(document).ready(function() {
+	$(".add-quandcest").click(function(e) {
+		e.preventDefault();
+	if (song3 != 0) {  // Prevent duplication 
+		return false
+	}
+	});
+	$('.add-quandcest').live('click', function(e) {
+		e.preventDefault();
+		$(".sound-quandcest").clone().appendTo("#myPlaylist"); 
+		song3++; 
+
+		return false; 
+	});
+});
+
+
+/* Add quelquun to playlist */ 
+$(document).ready(function() {
+	$(".add-quelquun").click(function(e) {
+		e.preventDefault();
+	if (song4 != 0) {  // Prevent duplication 
+		return false
+	}
+	});
+	$('.add-quelquun').live('click', function(e) {
+		e.preventDefault();
+		$(".sound-quelquun").clone().appendTo("#myPlaylist"); 
+		song4++; 
+
+		return false; 
+	});
+});
+
+/* Add tous to playlist */ 
+$(document).ready(function() {
+	$(".add-tous").click(function(e) {
+		e.preventDefault();
+	if (song5 != 0) {  // Prevent duplication 
+		return false
+	}
+	});
+	$('.add-tous').live('click', function(e) {
+		e.preventDefault();
+		$(".sound-tous").clone().appendTo("#myPlaylist"); 
+		song5++; 
+
+		return false; 
+	});
+});
+
+/* Add papaoutai to playlist */ 
+$(document).ready(function() {
+	$(".add-papa").click(function(e) {
+		e.preventDefault();
+	if (song6 != 0) {  // Prevent duplication 
+		return false
+	}
+	});
+	$('.add-papa').live('click', function(e) {
+		e.preventDefault();
+		$(".sound-papa").clone().appendTo("#myPlaylist"); 
+		song6++; 
+
+		return false; 
+	});
+});
+
 
 /* Clear advanced wordbank */ 
 
@@ -144,7 +237,7 @@ $(".delete-beg").live('click', function() {
 $(".delete-playlist").live('click', function() {
 		$("#myPlaylist").remove();
 		$("#holdPlaylist").append("<div id='myPlaylist'>")
-		$("#holdPlaylist").append("<p> Your playlist is empty </p>")
+		$("#holdPlaylist").append("<p id = 'emptySongList'> Your playlist is empty </p>")
 		$("#holdPlaylist").append("</div>")
 		
 	song1 = 0;  // "Où est Ma Tête?"
@@ -153,6 +246,8 @@ $(".delete-playlist").live('click', function() {
 	song4 = 0;  // "Quelqu'un a Touché Ma Femme"
 	song5 = 0;  // "Tous Les Mêmes"
 	song6 = 0;  // "Papaoutai"
+
+	songbankClear++;  // Message displayed 
 
 }); 
 
