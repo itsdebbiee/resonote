@@ -96,14 +96,12 @@ $(document).ready(function() {
 	$(".testSympa").click(function(e) {
 		e.preventDefault();
 
-		$(".sound").clone().append("#myPlaylist");
 	});
-	
-	/*$('.testSympa').live('click', function(e) {
+	$('.testSympa').live('click', function(e) {
 		e.preventDefault();
 		$(".sound").clone().appendTo("#myPlaylist"); 
 		return false; 
-	});*/
+	});
 });
 
 /* Clear advanced wordbank */ 
@@ -124,7 +122,6 @@ $(".delete-int").live('click', function() {
 
 $(".delete-beg").live('click', function() {
 		$("#easy-wb").remove();
-
 		
 });
 
@@ -133,8 +130,7 @@ $(".delete-beg").live('click', function() {
 
 $(".delete-playlist").live('click', function() {
 		$("#myPlaylist").remove();
-		$("#holdPlaylist").append("<div id='myPlaylist'>");
-		$("#holdPlaylist").append("</div"); 
+		
 }); 
 
 
