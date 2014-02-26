@@ -24,6 +24,7 @@ var song6 = 0;  // "Papaoutai"
 
 var songbankClear = 0; // Indicates if song bank is clear
 
+
 /* Add to beginner wordbank */ 
 
 $('.add').live('click', function(e) {
@@ -108,16 +109,17 @@ $(document).ready(function() {
 		e.preventDefault();
 	if (song2 != 0) { // Prevent duplication 
 		return false
-	}
+	} /*
 	if (songbankClear != 0) { // Deletes "bank is clear message"
 		$("#emptySongList").remove();
 		songbankClear = 0; // Decrement 
-	}
+	} */
 	});
 	$('.add-sympa').live('click', function(e) {
 		e.preventDefault();
 		$(".sound-sympa").clone().appendTo("#myPlaylist"); 
 		song2++; 
+		//$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -135,6 +137,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-matete").clone().appendTo("#myPlaylist"); 
 		song1++; 
+		//$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -152,6 +155,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-quandcest").clone().appendTo("#myPlaylist"); 
 		song3++; 
+	//	$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -170,6 +174,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-quelquun").clone().appendTo("#myPlaylist"); 
 		song4++; 
+		//$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -187,6 +192,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-tous").clone().appendTo("#myPlaylist"); 
 		song5++; 
+		//$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -204,6 +210,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-papa").clone().appendTo("#myPlaylist"); 
 		song6++; 
+	//	$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -248,6 +255,7 @@ $(".delete-playlist").live('click', function() {
 	song6 = 0;  // "Papaoutai"
 
 	songbankClear++;  // Message displayed 
+	//$("#playlistClear").show();  // hide playlist 
 
 }); 
 
