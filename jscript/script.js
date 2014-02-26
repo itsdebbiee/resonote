@@ -13,6 +13,15 @@ $('.add').live('click', function(e) {
 	return false;
 });*/
 
+/* Global variables */
+
+var song1 = 0;  // "Où est Ma Tête?"
+var song2 = 0;  // "Sympathique"
+var song3 = 0;  // "Quand C'est"
+var song4 = 0;  // "Quelqu'un a Touché Ma Femme"
+var song5 = 0;  // "Tous Les Mêmes"
+var song6 = 0;  // "Papaoutai"
+
 /* Add to beginner wordbank */ 
 
 $('.add').live('click', function(e) {
@@ -95,11 +104,15 @@ $('.add-exp').live('click', function(e) {
 $(document).ready(function() {
 	$(".testSympa").click(function(e) {
 		e.preventDefault();
-
+	if (song2 != 0) {
+		return false
+	}
 	});
 	$('.testSympa').live('click', function(e) {
 		e.preventDefault();
 		$(".sound").clone().appendTo("#myPlaylist"); 
+		song2++; 
+
 		return false; 
 	});
 });
@@ -130,7 +143,17 @@ $(".delete-beg").live('click', function() {
 
 $(".delete-playlist").live('click', function() {
 		$("#myPlaylist").remove();
+		$("#holdPlaylist").append("<div id='myPlaylist'>")
+		$("#holdPlaylist").append("<p> Your playlist is empty </p>")
+		$("#holdPlaylist").append("</div>")
 		
+	song1 = 0;  // "Où est Ma Tête?"
+	song2 = 0;  // "Sympathique"
+	song3 = 0;  // "Quand C'est"
+	song4 = 0;  // "Quelqu'un a Touché Ma Femme"
+	song5 = 0;  // "Tous Les Mêmes"
+	song6 = 0;  // "Papaoutai"
+
 }); 
 
 
@@ -149,6 +172,7 @@ $(document).ready(function() {
 		$("#sympathique-reveal").fadeIn('fast');
 		$("#ouest, #sympathique").fadeOut('fast');
 		$(".back").fadeIn('fast');
+
 	});
 
 	$("#quand").click(function() {
