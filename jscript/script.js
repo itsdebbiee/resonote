@@ -25,6 +25,7 @@ var song6 = 0;  // "Papaoutai"
 var songbankClear = 0; // Indicates if song bank is clear
 
 
+
 /* Add to beginner wordbank */ 
 
 $('.add').live('click', function(e) {
@@ -284,6 +285,7 @@ $(".delete-beg").live('click', function() {
 
 $(".delete-playlist").live('click', function() {
 	if (song1+song2+song3+song4+song5+song6 == 0) { // Playlist is already empty
+		console.log("Nice try.... playlist is already empty");
 		return false; 
 	}
 		$("#myPlaylist").remove();
