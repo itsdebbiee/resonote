@@ -311,8 +311,10 @@ $(".delete-playlist").live('click', function() {
 $('.delete-sympa').live('click', function() {
 		$('.bank-sympa').remove();
 		
-		
 	song2 = 0;  // "Sympathique" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
@@ -323,6 +325,9 @@ $('.delete-matete').live('click', function() {
 		
 		
 	song1 = 0;  // "Où Est Ma Tête" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
@@ -333,6 +338,9 @@ $('.delete-quandcest').live('click', function() {
 		
 		
 	song3 = 0;  // "Quand C'est" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
@@ -343,6 +351,9 @@ $('.delete-quelquun').live('click', function() {
 		
 		
 	song4 = 0;  // "Quelqu'un a Touché ma Femme" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
@@ -353,6 +364,9 @@ $('.delete-tous').live('click', function() {
 		
 		
 	song5 = 0;  // "Tous Les Mêmes" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
@@ -362,6 +376,9 @@ $('.delete-papa').live('click', function() {
 		
 		
 	song6 = 0;  // "Papaoutai" not present
+	if (song1+song2+song3+song4+song5+song6 == 0) {
+			$("#emptySongList").show(); // Show emply playlist message 
+		} 
 
 }); 
 
