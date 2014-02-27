@@ -99,7 +99,7 @@ $('.add-exp').live('click', function(e) {
 	
 	return false;
 	
-});
+}); 
 
 
 /* Add sympa to playlist */ 
