@@ -124,6 +124,7 @@ $(document).ready(function() {
 		$(".sound-sympa").clone().appendTo(".bank-sympa"); // Append to new div 
 		$(".bank-sympa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-sympa btn btn-default'>Delete Song</button>"); // Append song to new div
 		$(".bank-sympa").append("</div>"); // Close new div 
+		$("#emptySongList").hide(); // Show message
 
 		song2++; 
 
@@ -151,6 +152,7 @@ $(document).ready(function() {
 		$(".sound-matete").clone().appendTo(".bank-matete"); // Append  song to new div 
 		$(".bank-matete").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-matete btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-matete").append("</div>"); // Close new div 
+		$("#emptySongList").hide(); // Show message
 
 
 		return false; 
@@ -174,6 +176,7 @@ $(document).ready(function() {
 		$(".sound-quandcest").clone().appendTo(".bank-quandcest"); // Append  song to new div 
 		$(".bank-quandcest").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quandcest btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quandcest").append("</div>"); // Close new div 
+		$("#emptySongList").hide(); // Show message
 
 		return false; 
 	});
@@ -197,6 +200,7 @@ $(document).ready(function() {
 		$(".sound-quelquun").clone().appendTo(".bank-quelquun"); // Append  song to new div 
 		$(".bank-quelquun").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quelquun btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quelquun").append("</div>"); // Close new div 
+		$("#emptySongList").hide(); // Show message
 
 		return false; 
 	});
@@ -218,7 +222,8 @@ $(document).ready(function() {
 		$("#myPlaylist").append("<div class= 'bank-tous'>"); // Append new div 
 		$(".sound-tous").clone().appendTo(".bank-tous"); // Append  song to new div 
 		$(".bank-tous").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-tous btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-tous").append("</div>"); // Close new div 
+		$(".bank-tous").append("</div>"); // Close new div
+		$("#emptySongList").hide(); // Show message 
 
 
 		return false; 
@@ -229,19 +234,24 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".add-papa").click(function(e) {
 		e.preventDefault();
+	console.log("Monkeys");
 	if (song6 != 0) {  // Prevent duplication 
 		return false
 	}
 	});
-	$('.add-papa').live('click', function(e) {
+	
+	$(".add-papa").live('click', function(e) {
+		console.log("Monkeys and hoes know where iasdfasdfasdfasdfasdfasdfasdft goeas");
 		e.preventDefault();
 		song6++; 
 
 		// Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-papa'>"); // Append new div 
+		console.log("Monkeys and hoes know where it goes");
 		$(".sound-papa").clone().appendTo(".bank-papa"); // Append  song to new div 
 		$(".bank-papa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-papa btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-papa").append("</div>"); // Close new div 
+		$("#emptySongList").hide(); // Show message 
 
 		return false; 
 	});
@@ -273,10 +283,13 @@ $(".delete-beg").live('click', function() {
 /* Clear playlist */ 
 
 $(".delete-playlist").live('click', function() {
+	if (song1+song2+song3+song4+song5+song6 != 0) { // Playlist is already empty
+		return false; 
+	}
 		$("#myPlaylist").remove();
-		$("#holdPlaylist").append("<div id='myPlaylist'>")
-		$("#holdPlaylist").append("<p id = 'emptySongList'> Your playlist is empty </p>")
-		$("#holdPlaylist").append("</div>")
+		$("#emptySongList").show(); // Show message 
+		$("#holdPlaylist").append("<div id='myPlaylist'>");
+		$("#holdPlaylist").append("</div>");
 		
 	song1 = 0;  // "Où est Ma Tête?"
 	song2 = 0;  // "Sympathique"
@@ -286,7 +299,7 @@ $(".delete-playlist").live('click', function() {
 	song6 = 0;  // "Papaoutai"
 
 	songbankClear++;  // Message displayed 
-	//$("#playlistClear").show();  // hide playlist 
+	
 
 }); 
 
