@@ -286,6 +286,7 @@ $(".delete-beg").live('click', function() {
 $(".delete-playlist").live('click', function() {
 	if (song1+song2+song3+song4+song5+song6 == 0) { // Playlist is already empty
 		console.log("Nice try.... playlist is already empty");
+		alert("Nice try!!!!!!!");
 		return false; 
 	}
 		$("#myPlaylist").remove();
@@ -479,7 +480,24 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $('#wb-icon').on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        $('html,body').animate({scrollTop: 0}, "fast");
+    }); 
+
+     $('#flag-icon').on('click', function(){
+        $('html,body').animate({scrollTop: 0}, "fast");
+    }); 
+
+     $('#playlist-icon').on('click', function(){
+        $('html,body').animate({scrollTop: 0}, "fast");
+    }); 
+
+     $('#settings-icon').on('click', function(){
+        $('html,body').animate({scrollTop: 0}, "fast");
+    }); 
+
+     $('#home-icon').on('click', function(){
+        $('html,body').animate({scrollTop: 0}, "fast");
+        
     }); 
 });  
 
