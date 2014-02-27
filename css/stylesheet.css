@@ -292,3 +292,10 @@ TABS
     text-align:center;
 }
 
+/*
+PLAYLIST
+====================================== */
+
+#myPlaylist button {
+	background: red;
+}
