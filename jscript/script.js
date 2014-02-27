@@ -148,8 +148,8 @@ $(document).ready(function() {
 
 		// Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-matete'>"); // Append new div 
-		$(".sound-matete").clone().appendTo(".bank-matete"); // Append to new div 
-		$(".bank-matete").append("<img class='delete-matete' src='img/delete.png'/>"); // Append song to new div
+		$(".sound-matete").clone().appendTo(".bank-matete"); // Append  song to new div 
+		$(".bank-matete").append("<img class='delete-matete' src='img/delete.png'/>"); // Append delete-song to new div
 		$(".bank-matete").append("</div>"); // Close new div 
 
 
@@ -157,7 +157,7 @@ $(document).ready(function() {
 	});
 });
 
-/* Add ma tete to playlist */ 
+/* Add quand cest to playlist */ 
 $(document).ready(function() {
 	$(".add-quandcest").click(function(e) {
 		e.preventDefault();
@@ -167,9 +167,13 @@ $(document).ready(function() {
 	});
 	$('.add-quandcest').live('click', function(e) {
 		e.preventDefault();
-		$(".sound-quandcest").clone().appendTo("#myPlaylist"); 
 		song3++; 
-	//	$(#playlistClear).hide();  // hide playlist 
+
+// Add song in a new div 
+		$("#myPlaylist").append("<div class= 'bank-quandcest'>"); // Append new div 
+		$(".sound-quandcest").clone().appendTo(".bank-quandcest"); // Append  song to new div 
+		$(".bank-quandcest").append("<img class='delete-quandcest' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-quandcest").append("</div>"); // Close new div 
 
 		return false; 
 	});
@@ -186,9 +190,13 @@ $(document).ready(function() {
 	});
 	$('.add-quelquun').live('click', function(e) {
 		e.preventDefault();
-		$(".sound-quelquun").clone().appendTo("#myPlaylist"); 
 		song4++; 
-		//$(#playlistClear).hide();  // hide playlist 
+
+		// Add song in a new div 
+		$("#myPlaylist").append("<div class= 'bank-quelquun'>"); // Append new div 
+		$(".sound-quelquun").clone().appendTo(".bank-quelquun"); // Append  song to new div 
+		$(".bank-quelquun").append("<img class='delete-quelquun' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-quelquun").append("</div>"); // Close new div 
 
 		return false; 
 	});
@@ -206,7 +214,6 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-tous").clone().appendTo("#myPlaylist"); 
 		song5++; 
-		//$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -224,7 +231,6 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(".sound-papa").clone().appendTo("#myPlaylist"); 
 		song6++; 
-	//	$(#playlistClear).hide();  // hide playlist 
 
 		return false; 
 	});
@@ -277,7 +283,6 @@ $(".delete-playlist").live('click', function() {
 /* Delete Sympa from playlist */ 
 
 $('.delete-sympa').live('click', function() {
-	console.log("HEYHEYHEYHEYHEYHEYHEY");
 		$('.bank-sympa').remove();
 		
 		
@@ -288,11 +293,30 @@ $('.delete-sympa').live('click', function() {
 /* Delete Ma Tete from playlist */ 
 
 $('.delete-matete').live('click', function() {
-	console.log("HEYHEYHEYHEYHEYHEYHEY");
 		$('.bank-matete').remove();
 		
 		
 	song1 = 0;  // "Où Est Ma Tête" not present
+
+}); 
+
+/* Delete Quand C'est from playlist */ 
+
+$('.delete-quandcest').live('click', function() {
+		$('.bank-quandcest').remove();
+		
+		
+	song3 = 0;  // "Où Est Ma Tête" not present
+
+}); 
+
+/* Delete Quelqu'un a Touché ma Femme from playlist */ 
+
+$('.delete-quelquun').live('click', function() {
+		$('.bank-quelquun').remove();
+		
+		
+	song3 = 0;  // "Où Est Ma Tête" not present
 
 }); 
 

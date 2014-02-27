@@ -266,7 +266,8 @@ Song Pages
 	display:none;
 }
 
-.delete-adv, .delete-int, .delete-beg, .delete-playlist, .delete-sympa{
+.delete-adv, .delete-int, .delete-beg, .delete-playlist, .delete-sympa, 
+ .delete-matete, .delete-quelquun, .delete-quandcest{
 	display:inline-block;
 	height: 15px;
 	width: 15px;
