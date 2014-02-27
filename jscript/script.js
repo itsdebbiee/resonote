@@ -117,9 +117,17 @@ $(document).ready(function() {
 	});
 	$('.add-sympa').live('click', function(e) {
 		e.preventDefault();
-		$(".sound-sympa").clone().appendTo("#myPlaylist"); 
+
+		// Add song in a new div 
+
+		$("#myPlaylist").append("<div class= 'bank-sympa'>"); // Append new div 
+		$(".sound-sympa").clone().appendTo(".bank-sympa"); // Append to new div 
+		$(".bank-sympa").append("<img class='delete-sympa' src='img/delete.png'/>"); // Append song to new div
+		$(".bank-sympa").append("</div>"); // Close new div 
+
 		song2++; 
-		//$(#playlistClear).hide();  // hide playlist 
+
+		
 
 		return false; 
 	});
@@ -134,10 +142,16 @@ $(document).ready(function() {
 	}
 	});
 	$('.add-matete').live('click', function(e) {
-		e.preventDefault();
-		$(".sound-matete").clone().appendTo("#myPlaylist"); 
+		e.preventDefault(); 
 		song1++; 
-		//$(#playlistClear).hide();  // hide playlist 
+		
+
+		// Add song in a new div 
+		$("#myPlaylist").append("<div class= 'bank-matete'>"); // Append new div 
+		$(".sound-matete").clone().appendTo(".bank-matete"); // Append to new div 
+		$(".bank-matete").append("<img class='delete-matete' src='img/delete.png'/>"); // Append song to new div
+		$(".bank-matete").append("</div>"); // Close new div 
+
 
 		return false; 
 	});
@@ -260,7 +274,27 @@ $(".delete-playlist").live('click', function() {
 }); 
 
 
+/* Delete Sympa from playlist */ 
 
+$('.delete-sympa').live('click', function() {
+	console.log("HEYHEYHEYHEYHEYHEYHEY");
+		$('.bank-sympa').remove();
+		
+		
+	song2 = 0;  // "Sympathique" not present
+
+}); 
+
+/* Delete Ma Tete from playlist */ 
+
+$('.delete-matete').live('click', function() {
+	console.log("HEYHEYHEYHEYHEYHEYHEY");
+		$('.bank-matete').remove();
+		
+		
+	song1 = 0;  // "Où Est Ma Tête" not present
+
+}); 
 
 
 /* Song Pages */
