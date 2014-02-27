@@ -122,7 +122,7 @@ $(document).ready(function() {
 
 		$("#myPlaylist").append("<div class= 'bank-sympa'>"); // Append new div 
 		$(".sound-sympa").clone().appendTo(".bank-sympa"); // Append to new div 
-		$(".bank-sympa").append("<img class='delete-sympa' src='img/delete.png'/>"); // Append song to new div
+		$(".bank-sympa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-sympa btn btn-default'>Delete Song</button>"); // Append song to new div
 		$(".bank-sympa").append("</div>"); // Close new div 
 
 		song2++; 
@@ -149,7 +149,7 @@ $(document).ready(function() {
 		// Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-matete'>"); // Append new div 
 		$(".sound-matete").clone().appendTo(".bank-matete"); // Append  song to new div 
-		$(".bank-matete").append("<img class='delete-matete' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-matete").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-matete btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-matete").append("</div>"); // Close new div 
 
 
@@ -172,7 +172,7 @@ $(document).ready(function() {
 // Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-quandcest'>"); // Append new div 
 		$(".sound-quandcest").clone().appendTo(".bank-quandcest"); // Append  song to new div 
-		$(".bank-quandcest").append("<img class='delete-quandcest' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-quandcest").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quandcest btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quandcest").append("</div>"); // Close new div 
 
 		return false; 
@@ -195,7 +195,7 @@ $(document).ready(function() {
 		// Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-quelquun'>"); // Append new div 
 		$(".sound-quelquun").clone().appendTo(".bank-quelquun"); // Append  song to new div 
-		$(".bank-quelquun").append("<img class='delete-quelquun' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-quelquun").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quelquun btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quelquun").append("</div>"); // Close new div 
 
 		return false; 
@@ -217,7 +217,7 @@ $(document).ready(function() {
 // Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-tous'>"); // Append new div 
 		$(".sound-tous").clone().appendTo(".bank-tous"); // Append  song to new div 
-		$(".bank-tous").append("<img class='delete-tous' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-tous").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-tous btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-tous").append("</div>"); // Close new div 
 
 
@@ -240,7 +240,7 @@ $(document).ready(function() {
 		// Add song in a new div 
 		$("#myPlaylist").append("<div class= 'bank-papa'>"); // Append new div 
 		$(".sound-papa").clone().appendTo(".bank-papa"); // Append  song to new div 
-		$(".bank-papa").append("<img class='delete-papa' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-papa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-papa btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-papa").append("</div>"); // Close new div 
 
 		return false; 
