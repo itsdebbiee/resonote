@@ -283,7 +283,7 @@ $(".delete-beg").live('click', function() {
 /* Clear playlist */ 
 
 $(".delete-playlist").live('click', function() {
-	if (song1+song2+song3+song4+song5+song6 != 0) { // Playlist is already empty
+	if (song1+song2+song3+song4+song5+song6 == 0) { // Playlist is already empty
 		return false; 
 	}
 		$("#myPlaylist").remove();
