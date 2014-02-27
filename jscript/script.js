@@ -212,8 +212,14 @@ $(document).ready(function() {
 	});
 	$('.add-tous').live('click', function(e) {
 		e.preventDefault();
-		$(".sound-tous").clone().appendTo("#myPlaylist"); 
 		song5++; 
+
+// Add song in a new div 
+		$("#myPlaylist").append("<div class= 'bank-tous'>"); // Append new div 
+		$(".sound-tous").clone().appendTo(".bank-tous"); // Append  song to new div 
+		$(".bank-tous").append("<img class='delete-tous' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-tous").append("</div>"); // Close new div 
+
 
 		return false; 
 	});
@@ -229,8 +235,13 @@ $(document).ready(function() {
 	});
 	$('.add-papa').live('click', function(e) {
 		e.preventDefault();
-		$(".sound-papa").clone().appendTo("#myPlaylist"); 
 		song6++; 
+
+		// Add song in a new div 
+		$("#myPlaylist").append("<div class= 'bank-papa'>"); // Append new div 
+		$(".sound-papa").clone().appendTo(".bank-papa"); // Append  song to new div 
+		$(".bank-papa").append("<img class='delete-papa' src='img/delete.png'/>"); // Append delete-song to new div
+		$(".bank-papa").append("</div>"); // Close new div 
 
 		return false; 
 	});
@@ -306,7 +317,7 @@ $('.delete-quandcest').live('click', function() {
 		$('.bank-quandcest').remove();
 		
 		
-	song3 = 0;  // "Où Est Ma Tête" not present
+	song3 = 0;  // "Quand C'est" not present
 
 }); 
 
@@ -316,7 +327,26 @@ $('.delete-quelquun').live('click', function() {
 		$('.bank-quelquun').remove();
 		
 		
-	song3 = 0;  // "Où Est Ma Tête" not present
+	song4 = 0;  // "Quelqu'un a Touché ma Femme" not present
+
+}); 
+
+
+/* Delete Tous Les Mêmes from playlist */ 
+$('.delete-tous').live('click', function() {
+		$('.bank-tous').remove();
+		
+		
+	song5 = 0;  // "Tous Les Mêmes" not present
+
+}); 
+
+/* Delete Papaoutai from playlist */ 
+$('.delete-papa').live('click', function() {
+		$('.bank-papa').remove();
+		
+		
+	song6 = 0;  // "Papaoutai" not present
 
 }); 
 

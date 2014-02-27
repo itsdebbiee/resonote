@@ -267,7 +267,7 @@ Song Pages
 }
 
 .delete-adv, .delete-int, .delete-beg, .delete-playlist, .delete-sympa, 
- .delete-matete, .delete-quelquun, .delete-quandcest{
+ .delete-matete, .delete-quelquun, .delete-quandcest, .delete-tous, .delete-papa{
 	display:inline-block;
 	height: 15px;
 	width: 15px;
