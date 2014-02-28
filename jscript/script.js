@@ -438,7 +438,6 @@ $(document).ready(function() {
 		$(".back2, #tous-reveal, #papa-reveal").fadeOut('fast');
 	});
 
-
 });
 
 /* Popover */
@@ -501,7 +500,50 @@ $(document).ready(function(){
     }); 
 });  
 
+/* redesign page js */
+$(document).ready(function() {
+	$("#ouest1").click(function() {
+		$("#ouest-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+	});
 
+	$("#sympathique1").click(function() {
+		$("#sympathique-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+
+	});
+
+	$("#quand1").click(function() {
+		$("#quand-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+	});
+
+	$("#quel1").click(function() {
+		$("#quel-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+	});
+
+	$("#tous1").click(function() {
+		$("#tous-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+	});
+
+	$("#papa1").click(function() {
+		$("#papa-reveal1").fadeIn('fast');
+		$("#ouest1, #sympathique1, #quand1, #quel1, #tous1, #papa1, #easy-songs, #inter-songs, #exp-songs").fadeOut('fast');
+		$(".back-1").fadeIn('fast');
+	});
+
+	$(".back-1").click(function() {
+		$("#easy-songs, #ouest1, #sympathique1, #inter-songs, #quel1, #quand1, #exp-songs, #tous1, #papa1").fadeIn('fast');
+		$(".back-1, #sympathique-reveal1, #ouest-reveal1, #quand-reveal1, #quel-reveal1, #tous-reveal1, #papa-reveal1").fadeOut('fast');
+	});
+});
 
 
 
