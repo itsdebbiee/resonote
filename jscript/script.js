@@ -22,6 +22,10 @@ var song4 = 0;  // "Quelqu'un a Touché Ma Femme"
 var song5 = 0;  // "Tous Les Mêmes"
 var song6 = 0;  // "Papaoutai"
 
+var beg = 0;
+var inter = 0; 
+var adv = 0; 
+
 var songbankClear = 0; // Indicates if song bank is clear
 
 
@@ -31,6 +35,11 @@ var songbankClear = 0; // Indicates if song bank is clear
 $('.add').live('click', function(e) {
 	e.preventDefault();
 
+	if (beg == 0) {
+		$("#easy-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-easy btn btn-default'>Clear</button>"); 
+	}
+
+console.log("GOT HERE");
 	var targetFrench=$(".line").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
@@ -44,9 +53,9 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	$("#easy-wb").append("<img class='delete-beg' src='img/delete.png'/>");
 	$("#easy-wb").append("</p>");
 	
+	beg++;
 	return false;
 	
 });
@@ -55,6 +64,12 @@ $('.add').live('click', function(e) {
 
 $('.add-int').live('click', function(e) {
 	e.preventDefault();
+
+	if (inter == 0) {
+		$("#int-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-intermed btn btn-default'>Clear</button>"); 
+	}
+
+	console.log("GOT HERE");
 
 	var targetFrench=$(".line-int").find(".french-int");
 	var cloneFrench=targetFrench.clone()[0];
@@ -69,9 +84,9 @@ $('.add-int').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#int-wb").append(cloneEng);
-	$("#int-wb").append("<img class='delete-int' src='img/delete.png'/>");
 	$("#int-wb").append("</p>");
 	
+	inter++; 
 	return false;
 	
 });
@@ -80,6 +95,10 @@ $('.add-int').live('click', function(e) {
 
 $('.add-exp').live('click', function(e) {
 	e.preventDefault();
+
+	if (adv == 0) {
+		$("#exp-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-exp btn btn-default'>Clear</button>"); 
+	}
 
 	var targetFrench=$(".line-exp").find(".french-exp");
 	var cloneFrench=targetFrench.clone()[0];
@@ -95,9 +114,9 @@ $('.add-exp').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#exp-wb").append(cloneEng);
-	$("#exp-wb").append("<img class='delete-adv' src='img/delete.png'/>");
 	$("#exp-wb").append("</p>");
 	
+	adv++; 
 	return false;
 	
 }); 
@@ -272,22 +291,28 @@ $(document).ready(function() {
 
 /* Clear advanced wordbank */ 
 
-$(".delete-adv").live('click', function() {
+$(".delete-exp").live('click', function() {
+		adv = 0;
 		$("#exp-wb").remove();
+		$("#hold-exp-wb").append("<div id='exp-wb'> </div>");
 		
 });
 
 /* Clear intermediate wordbank */ 
 
-$(".delete-int").live('click', function() {
+$(".delete-intermed").live('click', function() {
+		inter = 0; 
 		$("#int-wb").remove();
+		$("#hold-int-wb").append("<div id='int-wb'> </div>");
 		
 });
 
 /* Clear beginner wordbank */ 
 
-$(".delete-beg").live('click', function() {
+$(".delete-easy").live('click', function() {
+		beg = 0; 
 		$("#easy-wb").remove();
+		$("#hold-easy-wb").append("<div id='easy-wb'> </div>");
 		
 });
 
@@ -296,10 +321,10 @@ $(".delete-beg").live('click', function() {
 
 $(".delete-playlist").live('click', function() {
 	if (song1+song2+song3+song4+song5+song6 == 0) { // Playlist is already empty
-		console.log("Nice try.... playlist is already empty");
-		alert("Your playlist is already empty!");
+		alert("You haven't added any favorites!");
 		return false; 
 	}
+		alert("Your favorites have been cleared!");
 		$("#myPlaylist").remove();
 		$("#emptySongList").show(); // Show message 
 		$("#holdPlaylist").append("<div id='myPlaylist'>");

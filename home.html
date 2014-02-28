@@ -57,7 +57,6 @@
 					  
 		<!-- Word Bank -->
 		<div class="tab-pane" id="wordbank">
-			<div id="top-wordbank"> </div> 
 			<h1 class="text-center">Word Bank</h1>
 			<ul class="nav nav-tabs">
 			  <li><a href="#easy" data-toggle="tab">Easy</a></li>
@@ -67,9 +66,21 @@
 
 			<!-- Tab panes -->
 			<div class="tab-content">
-			  <div class="tab-pane" id="easy"><p id="easy-wb"></p></div>
-			  <div class="tab-pane" id="intermed"><p id="int-wb"></p></div>
-			  <div class="tab-pane" id="exp"><p id="exp-wb"></p></div>
+			  <div class="tab-pane" id="easy">
+			  	<div id ="hold-easy-wb">
+			  		<p id="easy-wb"></p>
+			  	</div> 
+			  </div>
+			  <div class="tab-pane" id="intermed">
+			  	<div id ="hold-int-wb">
+			  		<p id="int-wb"></p>
+			  	</div>
+			  </div>
+			  <div class="tab-pane" id="exp">
+			  	<div id ="hold-exp-wb">
+			  		<p id="exp-wb"></p>
+			  	</div> 
+			  </div>
 			</div>
 
 		</div> <!-- End Word Bank -->
@@ -756,7 +767,7 @@
 
 		<div id = 'contain-fav-mess'>
 			<h1> Your Favorites </h1> 
-			<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-playlist btn btn-default'>Clear</button>	
+			<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-playlist btn btn-default'>Clear Playlist</button>	
 			<h4 id = 'emptySongList'> You have no favorites </h4>     
 		</div>    
 
