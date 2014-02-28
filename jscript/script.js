@@ -324,11 +324,12 @@ $(".delete-playlist").live('click', function() {
 		alert("You haven't added any favorites!");
 		return false; 
 	}
-		alert("Your favorites have been cleared!");
+		
 		$("#myPlaylist").remove();
 		$("#emptySongList").show(); // Show message 
 		$("#holdPlaylist").append("<div id='myPlaylist'>");
 		$("#holdPlaylist").append("</div>");
+		alert("Your favorites have been cleared!");
 		
 	song1 = 0;  // "Où est Ma Tête?"
 	song2 = 0;  // "Sympathique"
