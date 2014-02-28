@@ -27,7 +27,7 @@
 
 <!-- Top Nav -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<a href="resonote.html"><img id="resonote-logo" src="img/Resonote.png" alt="Resonote Logo"/></a>
+	<a href="home.html"><img id="resonote-logo" src="img/Resonote.png" alt="Resonote Logo"/></a>
 </nav>	<!-- End Top Nav -->
 
 
@@ -104,7 +104,7 @@
 
 							<p class="line">
 
-									<button type="button" class="add-matete btn btn-default" style="color:white;">Add to  playlist</button>
+									<button type="button" class="add-matete btn btn-default" style="color:white;">Add to Favorites</button>
 								
 							</p>
 
@@ -274,7 +274,7 @@
 					  		</div> 
 							
 							<p class="line">
-								<button type="button" class="btn btn-default add-sympa" style="color:white;">Add to  playlist</button>
+								<button type="button" class="btn btn-default add-sympa" style="color:white;">Add to Favorites</button>
 							</p>
 
 
@@ -421,7 +421,7 @@
 							</div> 
 
 							<p class="line">
-								<button type="button" class="btn btn-default add-quandcest" style="color:white;">Add to  playlist</button>
+								<button type="button" class="btn btn-default add-quandcest" style="color:white;">Add to Favorites</button>
 							</p>
 
 
@@ -579,7 +579,7 @@
 						</div> 
 
 							<p class="line">
-								<button type="button" class="btn btn-default add-quelquun" style="color:white;">Add to  playlist</button>								
+								<button type="button" class="btn btn-default add-quelquun" style="color:white;">Add to Favorites</button>								
 							</p>
 
 
@@ -652,7 +652,7 @@
 							</div> 
 
 							<p class="line">
-								<button type="button" class="btn btn-default add-tous" style="color:white;">Add to  playlist</button>								
+								<button type="button" class="btn btn-default add-tous" style="color:white;">Add to Favorites</button>								
 							</p>
 
 
@@ -694,7 +694,7 @@
 
 							</div> 
 							<p class="line">
-								<button type="button" class="btn btn-default add-papa" style="color:white;">Add to  playlist</button>
+								<button type="button" class="btn btn-default add-papa" style="color:white;">Add to Favorites</button>
 							</p>
 
 							<p><strong>French:</strong></p>
@@ -754,10 +754,11 @@
 		<div class="tab-pane" id="playlist">
 			<div class="small-12 small-centered columns soundcloud-player">
 
-		<p> Your Playlist </p> 
-		<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-playlist btn btn-default'>Clear Playlist</button>
-				
-		<h2 id = 'emptySongList'> Your playlist is empty </h2>        
+		<div id = 'contain-fav-mess'>
+			<h1> Your Favorites </h1> 
+			<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-playlist btn btn-default'>Clear</button>	
+			<h4 id = 'emptySongList'> You have no favorites </h4>     
+		</div>    
 
 			<div class="tab-content">
 
@@ -782,7 +783,7 @@
 		<!-- Settings -->
 		<div class="tab-pane" id="settings">
 			<a href = "login.html"> 
-  				<p> Sign Out </p> 
+  				<h3> Sign Out </h3> 
   			</a> 
 		</div> <!-- End Settings -->
 

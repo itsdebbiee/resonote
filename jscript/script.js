@@ -109,7 +109,9 @@ $(document).ready(function() {
 	$(".add-sympa").click(function(e) {
 		e.preventDefault();
 	if (song2 != 0) { // Prevent duplication 
-		return false
+		 // Playlist is already empty
+	alert("This song is already in your favorites!");		 
+		return false;
 	} /*
 	if (songbankClear != 0) { // Deletes "bank is clear message"
 		$("#emptySongList").remove();
@@ -120,11 +122,11 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		// Add song in a new div 
-
+	    alert("Added to your favorites!");
 		$("#myPlaylist").append("<div class= 'bank-sympa'>"); // Append new div 
 		$(".sound-sympa").clone().appendTo(".bank-sympa"); // Append to new div 
 		$(".bank-sympa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-sympa btn btn-default'>Delete Song</button>"); // Append song to new div
-		$(".bank-sympa").append("</div>"); // Close new div 
+		$(".bank-sympa").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
 		song2++; 
@@ -140,6 +142,7 @@ $(document).ready(function() {
 	$(".add-matete").click(function(e) {
 		e.preventDefault();
 	if (song1 != 0) {  // Prevent duplication 
+		alert("This song is already in your favorites!");
 		return false
 	}
 	});
@@ -149,10 +152,11 @@ $(document).ready(function() {
 		
 
 		// Add song in a new div 
+		  alert("Added to your favorites!");
 		$("#myPlaylist").append("<div class= 'bank-matete'>"); // Append new div 
 		$(".sound-matete").clone().appendTo(".bank-matete"); // Append  song to new div 
 		$(".bank-matete").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-matete btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-matete").append("</div>"); // Close new div 
+		$(".bank-matete").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
 
@@ -165,6 +169,7 @@ $(document).ready(function() {
 	$(".add-quandcest").click(function(e) {
 		e.preventDefault();
 	if (song3 != 0) {  // Prevent duplication 
+		alert("This song is already in your favorites!");
 		return false
 	}
 	});
@@ -173,10 +178,11 @@ $(document).ready(function() {
 		song3++; 
 
 // Add song in a new div 
+		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-quandcest'>"); // Append new div 
 		$(".sound-quandcest").clone().appendTo(".bank-quandcest"); // Append  song to new div 
 		$(".bank-quandcest").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quandcest btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-quandcest").append("</div>"); // Close new div 
+		$(".bank-quandcest").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
 		return false; 
@@ -189,6 +195,7 @@ $(document).ready(function() {
 	$(".add-quelquun").click(function(e) {
 		e.preventDefault();
 	if (song4 != 0) {  // Prevent duplication 
+		alert("This song is already in your favorites!");
 		return false
 	}
 	});
@@ -197,10 +204,11 @@ $(document).ready(function() {
 		song4++; 
 
 		// Add song in a new div 
+		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-quelquun'>"); // Append new div 
 		$(".sound-quelquun").clone().appendTo(".bank-quelquun"); // Append  song to new div 
 		$(".bank-quelquun").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-quelquun btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-quelquun").append("</div>"); // Close new div 
+		$(".bank-quelquun").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
 		return false; 
@@ -212,6 +220,7 @@ $(document).ready(function() {
 	$(".add-tous").click(function(e) {
 		e.preventDefault();
 	if (song5 != 0) {  // Prevent duplication 
+		alert("This song is already in your favorites!");
 		return false
 	}
 	});
@@ -220,10 +229,11 @@ $(document).ready(function() {
 		song5++; 
 
 // Add song in a new div 
+		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-tous'>"); // Append new div 
 		$(".sound-tous").clone().appendTo(".bank-tous"); // Append  song to new div 
 		$(".bank-tous").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-tous btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-tous").append("</div>"); // Close new div
+		$(".bank-tous").append("<br></div>"); // Close new div
 		$("#emptySongList").hide(); // Show message 
 
 
@@ -237,21 +247,22 @@ $(document).ready(function() {
 		e.preventDefault();
 	console.log("Monkeys");
 	if (song6 != 0) {  // Prevent duplication 
+		alert("This song is already in your favorites!");
 		return false
 	}
 	});
 	
 	$(".add-papa").live('click', function(e) {
-		console.log("Monkeys and hoes know where iasdfasdfasdfasdfasdfasdfasdft goeas");
 		e.preventDefault();
 		song6++; 
 
-		// Add song in a new div 
+		// Add song in a new div
+		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-papa'>"); // Append new div 
 		console.log("Monkeys and hoes know where it goes");
 		$(".sound-papa").clone().appendTo(".bank-papa"); // Append  song to new div 
 		$(".bank-papa").append("<button style='width:100px; height: 25px; padding: 3px 10px' class='delete-papa btn btn-default'>Delete Song</button>"); // Append delete-song to new div
-		$(".bank-papa").append("</div>"); // Close new div 
+		$(".bank-papa").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message 
 
 		return false; 
@@ -286,7 +297,7 @@ $(".delete-beg").live('click', function() {
 $(".delete-playlist").live('click', function() {
 	if (song1+song2+song3+song4+song5+song6 == 0) { // Playlist is already empty
 		console.log("Nice try.... playlist is already empty");
-		alert("Nice try!!!!!!!");
+		alert("Your playlist is already empty!");
 		return false; 
 	}
 		$("#myPlaylist").remove();

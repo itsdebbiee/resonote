@@ -282,6 +282,11 @@ Song Pages
 	margin-top: 30px;
 }
 
+#contain-fav-mess {
+	text-align: center;
+	margin: auto;
+}
+
 /*
 TABS
 ====================================== */
