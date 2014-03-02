@@ -287,6 +287,12 @@ Song Pages
 	margin: auto;
 }
 
+.holdFrench{
+	/*visibility: hidden; */
+	background-color: green;
+	font-size: 30px;
+}
+
 /*
 TABS
 ====================================== */
