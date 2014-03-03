@@ -36,6 +36,7 @@ $('.add').live('click', function(e) {
 	e.preventDefault();
 
 	if (beg == 0) {
+		$("#eBankEmpty").remove(); 
 		$("#easy-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-easy btn btn-default'>Clear</button>"); 
 	}
 
@@ -66,6 +67,7 @@ $('.add-int').live('click', function(e) {
 	e.preventDefault();
 
 	if (inter == 0) {
+		$("#iBankEmpty").remove(); 
 		$("#int-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-intermed btn btn-default'>Clear</button>"); 
 	}
 
@@ -97,6 +99,7 @@ $('.add-exp').live('click', function(e) {
 	e.preventDefault();
 
 	if (adv == 0) {
+		$("#iBankEmpty").remove();  // Remove "empty word bank" message
 		$("#exp-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-exp btn btn-default'>Clear</button>"); 
 	}
 
@@ -294,7 +297,9 @@ $(document).ready(function() {
 $(".delete-exp").live('click', function() {
 		adv = 0;
 		$("#exp-wb").remove();
-		$("#hold-exp-wb").append("<div id='exp-wb'> </div>");
+		$("#hold-exp-wb").append("<div id='exp-wb'>");
+		$("#hold-exp-wb").append("<p id='aBankEmpty'> You have not added any Beginner phrases!");
+		$("#hold-exp-wb").append("</div>");
 		
 });
 
@@ -303,7 +308,9 @@ $(".delete-exp").live('click', function() {
 $(".delete-intermed").live('click', function() {
 		inter = 0; 
 		$("#int-wb").remove();
-		$("#hold-int-wb").append("<div id='int-wb'> </div>");
+		$("#hold-int-wb").append("<div id='int-wb'> ");
+		$("#hold-int-wb").append("<p id='iBankEmpty'> You have not added any Intermediate phrases!");
+		$("#hold-int-wb").append("</div>");
 		
 });
 
@@ -313,6 +320,9 @@ $(".delete-easy").live('click', function() {
 		beg = 0; 
 		$("#easy-wb").remove();
 		$("#hold-easy-wb").append("<div id='easy-wb'> </div>");
+		$("#hold-easy-wb").append("<p id='eBankEmpty'> You have not added any Beginner phrases!");
+		$("#hold-easy-wb").append("</div>");
+
 		
 });
 
