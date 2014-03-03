@@ -73,7 +73,7 @@ $('.add-int').live('click', function(e) {
 
 	console.log("GOT HERE");
 
-	var targetFrench=$(".line-int").find(".french-int");
+	var targetFrench=$(".line-int").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
 	$("#int-wb").append("<p class='wb-int'>");
@@ -99,11 +99,11 @@ $('.add-exp').live('click', function(e) {
 	e.preventDefault();
 
 	if (adv == 0) {
-		$("#iBankEmpty").remove();  // Remove "empty word bank" message
+		$("#aBankEmpty").remove();  // Remove "empty word bank" message
 		$("#exp-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-exp btn btn-default'>Clear</button>"); 
 	}
 
-	var targetFrench=$(".line-exp").find(".french-exp");
+	var targetFrench=$(".line-exp").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
 	console.log(cloneFrench);
@@ -298,7 +298,7 @@ $(".delete-exp").live('click', function() {
 		adv = 0;
 		$("#exp-wb").remove();
 		$("#hold-exp-wb").append("<div id='exp-wb'>");
-		$("#hold-exp-wb").append("<p id='aBankEmpty'> You have not added any Beginner phrases!");
+		$("#hold-exp-wb").append("<p id='aBankEmpty'> You have not added any Advanced phrases!");
 		$("#hold-exp-wb").append("</div>");
 		
 });
