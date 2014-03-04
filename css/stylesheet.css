@@ -293,6 +293,11 @@ Song Pages
 	font-size: 30px;
 }
 
+#easy-wb {
+	text-align: center;
+	margin: auto; 
+}
+
 /*
 TABS
 ====================================== */

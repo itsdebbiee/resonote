@@ -40,7 +40,6 @@ $('.add').live('click', function(e) {
 		$("#easy-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-easy btn btn-default'>Clear</button>"); 
 	}
 
-console.log("GOT HERE");
 	var targetFrench=$(".line").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
 	console.log(targetFrench);
