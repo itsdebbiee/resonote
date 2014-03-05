@@ -53,7 +53,12 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	$("#easy-wb").append("</p>");
+	//$("#easy-wb").append("<a class ='deleteBankButton'> <img src='img/delete.png'> </a>");
+	$("#easy-wb").append("<br></p>");
+		
+
+
+	
 	
 	beg++;
 	return false;
@@ -69,8 +74,6 @@ $('.add-int').live('click', function(e) {
 		$("#iBankEmpty").remove(); 
 		$("#int-wb").append("<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-intermed btn btn-default'>Clear</button>"); 
 	}
-
-	console.log("GOT HERE");
 
 	var targetFrench=$(".line-int").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
@@ -289,6 +292,79 @@ $(document).ready(function() {
 		return false; 
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Delete wordbank entry */ 
+
+
+$('.deleteBankButton').live('click', function() {
+		//beg--;
+		//var variable=$(".hold-easy-wb").find(".french3");
+	//	console.log(variable);
+	//	console.log("This printed....");
+		//$(".hold-easy-wb").variable.remove();
+	//	$('.wb').remove();
+
+		//$(document).on('click', '.deleteBankButton', function(){
+   			//var test = $(this).closest('.wb').clone();
+   			//console.log("Next line is dog");
+   			//console.log(dog);
+
+   			 console.log("Pressed");
+   			 $('#easy-wb').find('.wb').remove();
+
+   			// console.log(test);
+
+//})
+
+		//return false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+});
+
 
 
 /* Clear advanced wordbank */ 

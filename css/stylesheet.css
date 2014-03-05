@@ -21,7 +21,7 @@ a:hover {
 
 .header {
 	height: 70px;
-	background: #57b5b8;
+	background: #00397F;
 	border: 1px solid #CCC;
 	width: 100%;
 	top: 0px;
@@ -44,7 +44,8 @@ a:hover {
 
 .mycontent {
 	width: 100%;
-	background: #F0F0F0;
+	background: #00397F;
+
 	border: 1px solid #CCC;
 	height: 700px;
 	margin: 90px auto;
@@ -68,7 +69,9 @@ a:hover {
 
 .nav-bar > .active > a {
   color: #f5f5f5;
-  background-color: #008080;
+  	background-color: #00397F;
+
+  /*background-color: #008080; */
 }
 
 /*
@@ -85,7 +88,8 @@ HOME
 
 .content-home {
 	width: 100%;
-	background: #F0F0F0;
+	background: #004EB0;
+	color: white;
 	border: 1px solid #CCC;
 	height: 800px;
 	margin: 90px auto;
@@ -103,7 +107,7 @@ NAV BAR
 	height: 50px;
 	z-index: 10;
 	width: 100%;
-	background: #57b5b8;
+	background: #004EB0;
 }
 
 #bottom-nav .nav-bar {
@@ -116,7 +120,8 @@ NAV BAR
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
-	background: #57b5b8;
+	background: #00397F;
+;
 }
 
 .nav-button-home:hover {
@@ -267,7 +272,7 @@ Song Pages
 }
 
 .delete-adv, .delete-int, .delete-beg, .delete-playlist, .delete-sympa, 
- .delete-matete, .delete-quelquun, .delete-quandcest, .delete-tous, .delete-papa{
+ .delete-matete, .delete-quelquun, .delete-quandcest, .delete-tous, .delete-papa, .deleteBankButton{
 	display:inline-block;
 	height: 15px;
 	width: 15px;
@@ -293,9 +298,22 @@ Song Pages
 	font-size: 30px;
 }
 
-#easy-wb {
+#easy-wb, #int-wb, #exp-wb {
 	text-align: center;
 	margin: auto; 
+}
+
+.Logo-Login {
+	margin: auto;
+	text-align: center;
+	width: 40%;
+	height: 30%;
+}
+
+.form {
+	margin: auto;
+	text-align: center;
+	
 }
 
 /*

@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="jscript/script.js"></script>
 
 	<!--Link to CSS Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/foundation.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'/>
 
@@ -29,6 +29,7 @@
 
 <body>
 
+<!--
 
 <div class="row">
 
@@ -41,8 +42,39 @@
   		</a> 
 	
 	</div>
-</div>
+</div>    
 
+
+  --> 
+
+  <img src="img/Resonote.png" class = "Logo-Login"> 
+
+  <form id="sign-data" class="form">
+    <div id="mail_d" class="form-group">
+      <input id="email" type="email" placeholder="Email" class="form-control input-md" required="">
+    </div>
+    <div id="name_d" class="form-group collapse sud">
+      <input id="username" type="text" placeholder="Full Name" class="form-control input-md" required="">
+    </div>
+    <div id="pass_d" class="form-group">
+      <input id="password" type="password" placeholder="Password" class="form-control input-md" required="">
+    </div>
+    <div id="cpass_d" class="form-group collapse">
+      <input id="cpassword" type="password" class="form-control input-md" placeholder="Confirm Password" required="">
+    </div>
+    <div id="signin_d" class="form-group">
+      <a href = "home.id="signin" name="signin" class="btn btn-lg btn-block btn-info font_n" onclick="signed()"">Sign In</a>
+    </div>
+    <div id="signup_d" class="form-group collapse in">
+      <a href = "home.html" id="signup" name="signup" class="font_n" data-toggle="collapse" data-target=".sud">Not a member? Enter your information above and press here to enter</a>
+    </div>
+  </form>
+
+
+
+
+<!-- Look into login with soundcloud.... --> 
+<!-- Change "sign up" to "signup with information" --> 
 
 
 
@@ -50,9 +82,11 @@
 <script>
 	$(document).foundation();
 </script>
-
+ <script src="js/bootstrap.min.js"></script>
 <script src="jscript/vendor/jquery.js"></script>
 <script src="jscript/vendor/fastclick.js"></script>
+
+
 
 
 
