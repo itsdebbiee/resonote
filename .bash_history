@@ -12,3 +12,7 @@ kill 4583
 kill <4583>
 kill 4624
 netstat -lnp | grep :8888
+node app.js
+cd resonote
+node app.js
+ls
