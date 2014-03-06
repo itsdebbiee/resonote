@@ -670,22 +670,22 @@ $(document).ready(function() {
 
 $("#allsongs").on('click', function(){
 	d = new Date();
-	ga('send', 'event', 'button', 'click', 'Version A song tab clicked', d.getTime());
+	ga('send', 'event', 'image', 'click', 'Version A song tab clicked REAL', d.getTime());
 })
 
 $("#tous").on('click', function(){
 	d = new Date();
-	ga('send', 'event', 'button', 'click', 'Version A song name clicked', d.getTime());
+	ga('send', 'event', 'a', 'click', 'Version A song name clicked REAL', d.getTime());
 })
 
 $("#allsongs-redesign").on('click', function(){
 	d = new Date();
-	ga('send', 'event', 'button', 'click', 'Version B song tab clicked', d.getTime());
+	ga('send', 'event', 'image', 'click', 'Version B song tab clicked REAL', d.getTime());
 })
 
 $("#tous1").on('click', function(){
 	d = new Date();
-	ga('send', 'event', 'button', 'click', 'Version B song name clicked', d.getTime());
+	ga('send', 'event', 'a', 'click', 'Version B song name clicked REAL', d.getTime());
 })
 
 
