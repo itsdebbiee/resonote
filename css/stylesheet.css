@@ -21,7 +21,7 @@ a:hover {
 
 .header {
 	height: 70px;
-	background: #00397F;
+	background: #f5f5f5;
 	border: 1px solid #CCC;
 	width: 100%;
 	top: 0px;
@@ -44,7 +44,7 @@ a:hover {
 
 .mycontent {
 	width: 100%;
-	background: #00397F;
+	background: #f5f5f5;
 
 	border: 1px solid #CCC;
 	height: 700px;
@@ -107,7 +107,7 @@ NAV BAR
 	height: 50px;
 	z-index: 10;
 	width: 100%;
-	background: #004EB0;
+	background: #C11B17;
 }
 
 #bottom-nav .nav-bar {
@@ -120,8 +120,7 @@ NAV BAR
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
-	background: #00397F;
-;
+	background: #C11B17;
 }
 
 .nav-button-home:hover {
