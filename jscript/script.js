@@ -53,7 +53,7 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	//$("#easy-wb").append("<a class ='deleteBankButton'> <img src='img/delete.png'> </a>");
+	$("#easy-wb").append("<a class ='deleteBankButton'> <img src='img/delete.png'> </a>");
 	$("#easy-wb").append("<br></p>");
 		
 
@@ -167,7 +167,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	if (song1 != 0) {  // Prevent duplication 
 		alert("This song is already in your favorites!");
-		return false
+		return false;
 	}
 	});
 	$('.add-matete').live('click', function(e) {
@@ -194,7 +194,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	if (song3 != 0) {  // Prevent duplication 
 		alert("This song is already in your favorites!");
-		return false
+		return false;
 	}
 	});
 	$('.add-quandcest').live('click', function(e) {
@@ -220,7 +220,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	if (song4 != 0) {  // Prevent duplication 
 		alert("This song is already in your favorites!");
-		return false
+		return false;
 	}
 	});
 	$('.add-quelquun').live('click', function(e) {
@@ -512,6 +512,7 @@ $(document).ready(function() {
 		$("#ouest-reveal").fadeIn('fast');
 		$("#ouest, #sympathique").fadeOut('fast');
 		$(".back").fadeIn('fast');
+		console.log('hello');
 	});
 
 	$("#sympathique").click(function() {
