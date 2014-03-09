@@ -57,7 +57,7 @@ $('.add').live('click', function(e) {
 	$("#easy-wb").append("<br></p>");
 
 	//$('.small-text').close();
-	//	$('.small-text').hide();
+		$('.popup').popover('hide');
 
 		
 
@@ -93,6 +93,8 @@ $('.add-int').live('click', function(e) {
 	console.log(targetEng);
 	$("#int-wb").append(cloneEng);
 	$("#int-wb").append("</p>");
+	$('.popup').popover('hide'); // Hide notification 
+
 	
 	inter++; 
 	return false;
@@ -124,6 +126,8 @@ $('.add-exp').live('click', function(e) {
 	//console.log(targetEng);
 	$("#exp-wb").append(cloneEng);
 	$("#exp-wb").append("</p>");
+	$('.popup').popover('hide');
+
 	
 	adv++; 
 	return false;

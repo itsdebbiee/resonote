@@ -13,6 +13,8 @@ TABLE OF CONTENTS
 html, body {
 	cursor: crosshair;
 	font-family: Lato, sans-serif;
+	font: "Exo2";
+
 }
 
 a:hover {
@@ -320,6 +322,11 @@ Song Pages
 	display:block;
 	text-align: center;
 }
+/*
+.ratings {
+	margin: auto;
+	display: block; 
+} */
 
 /*
 TABS
