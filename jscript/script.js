@@ -53,8 +53,12 @@ $('.add').live('click', function(e) {
 	console.log(cloneEng);
 	console.log(targetEng);
 	$("#easy-wb").append(cloneEng);
-	$("#easy-wb").append("<a class ='deleteBankButton'> <img src='img/delete.png'> </a>");
+//	$("#easy-wb").append("<a class ='deleteBankButton'> <img src='img/delete.png'> </a>");
 	$("#easy-wb").append("<br></p>");
+
+	//$('.small-text').close();
+	//	$('.small-text').hide();
+
 		
 
 
@@ -107,8 +111,8 @@ $('.add-exp').live('click', function(e) {
 
 	var targetFrench=$(".line-exp").find(".french3");
 	var cloneFrench=targetFrench.clone()[0];
-	console.log(targetFrench);
-	console.log(cloneFrench);
+	//console.log(targetFrench);
+	//console.log(cloneFrench);
 	$("#exp-wb").append("<p class='wb-exp'>");
 	$("#exp-wb").append(cloneFrench);
 
@@ -116,8 +120,8 @@ $('.add-exp').live('click', function(e) {
 
 	var targetEng=$(".line-exp").find(".eng-exp");
 	var cloneEng=targetEng.clone()[0];
-	console.log(cloneEng);
-	console.log(targetEng);
+	//console.log(cloneEng);
+	//console.log(targetEng);
 	$("#exp-wb").append(cloneEng);
 	$("#exp-wb").append("</p>");
 	
@@ -371,21 +375,32 @@ $('.deleteBankButton').live('click', function() {
 
 $(".delete-exp").live('click', function() {
 		adv = 0;
-		$("#exp-wb").remove();
-		$("#hold-exp-wb").append("<div id='exp-wb'>");
-		$("#hold-exp-wb").append("<p id='aBankEmpty'> You have not added any Advanced phrases!");
-		$("#hold-exp-wb").append("</div>");
-		
+		console.log("This is happening");
+		var r = confirm("Your are about to clear your wordbank.  Is that ok?");
+		if (r == true)  {
+          $("#exp-wb").remove();
+		  $("#hold-exp-wb").append("<div id='exp-wb'>");
+		  $("#hold-exp-wb").append("<p id='aBankEmpty'> You have not added any Advanced phrases!");
+		  $("#hold-exp-wb").append("</div>");
+		 }
+		 else
+		 	return false; 
+		  
 });
 
 /* Clear intermediate wordbank */ 
 
 $(".delete-intermed").live('click', function() {
 		inter = 0; 
-		$("#int-wb").remove();
-		$("#hold-int-wb").append("<div id='int-wb'> ");
-		$("#hold-int-wb").append("<p id='iBankEmpty'> You have not added any Intermediate phrases!");
-		$("#hold-int-wb").append("</div>");
+		var x = confirm("Your are about to clear your wordbank.  Is that ok?");
+		if (x == true) {
+			$("#int-wb").remove();
+			$("#hold-int-wb").append("<div id='int-wb'> ");
+			$("#hold-int-wb").append("<p id='iBankEmpty'> You have not added any Intermediate phrases!");
+			$("#hold-int-wb").append("</div>");
+		}	
+		else
+			return false;
 		
 });
 
@@ -393,11 +408,15 @@ $(".delete-intermed").live('click', function() {
 
 $(".delete-easy").live('click', function() {
 		beg = 0; 
-		$("#easy-wb").remove();
-		$("#hold-easy-wb").append("<div id='easy-wb'> </div>");
-		$("#hold-easy-wb").append("<p id='eBankEmpty'> You have not added any Beginner phrases!");
-		$("#hold-easy-wb").append("</div>");
-
+		var e = confirm("Your are about to clear your wordbank.  Is that ok?");
+		if (e == true) {
+			$("#easy-wb").remove();
+			$("#hold-easy-wb").append("<div id='easy-wb'> </div>");
+			$("#hold-easy-wb").append("<p id='eBankEmpty'> You have not added any Beginner phrases!");
+			$("#hold-easy-wb").append("</div>");
+		}
+		else
+			return false; 
 		
 });
 
