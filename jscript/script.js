@@ -428,12 +428,15 @@ $(".delete-playlist").live('click', function() {
 		alert("You haven't added any favorites!");
 		return false; 
 	}
+
+	var p = confirm("Your are about to clear your playlist.  Is that ok?");
+	if (p == true) {
 		
 		$("#myPlaylist").remove();
 		$("#emptySongList").show(); // Show message 
 		$("#holdPlaylist").append("<div id='myPlaylist'>");
 		$("#holdPlaylist").append("</div>");
-		alert("Your favorites have been cleared!");
+		
 		
 	song1 = 0;  // "Où est Ma Tête?"
 	song2 = 0;  // "Sympathique"
@@ -442,7 +445,14 @@ $(".delete-playlist").live('click', function() {
 	song5 = 0;  // "Tous Les Mêmes"
 	song6 = 0;  // "Papaoutai"
 
+	// alert("Your favorites have been cleared!");
+	// Above line might not be necessary... instant feeback on screen
+
 	songbankClear++;  // Message displayed 
+	}
+	else   // Presses 'Cancel'
+		return false; 
+
 	
 
 }); 
