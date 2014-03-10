@@ -29,6 +29,16 @@ var adv = 0;
 var songbankClear = 0; // Indicates if song bank is clear
 
 
+/* Click 'x' to not add to wordbank */
+
+	$('.add-hide').live('click', function(e) {
+    e.preventDefault(); 
+    console.log("Cats");
+
+	$('.popup').popover('hide');
+	return false;
+
+});  
 
 /* Add to beginner wordbank */ 
 
