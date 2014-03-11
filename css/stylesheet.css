@@ -19,10 +19,11 @@ html, body {
 a:hover {
 	cursor: crosshair;
 }
+a
 
 .header {
 	height: 70px;
-	background: #f5f5f5;
+	background: #6B6564;
 	border: 1px solid #CCC;
 	width: 100%;
 	top: 0px;
@@ -45,7 +46,9 @@ a:hover {
 
 .mycontent {
 	width: 100%;
-	background: #f5f5f5;
+	/*background: #f5f5f5; */
+	background: #6B6564;
+	384E96
 
 	border: 1px solid #CCC;
 	height: 700px;
@@ -70,7 +73,7 @@ a:hover {
 
 .nav-bar > .active > a {
   color: #f5f5f5;
-  	background-color: #00397F;
+  	background-color: #6B6564;
 
   /*background-color: #008080; */
 }
@@ -89,8 +92,11 @@ HOME
 
 .content-home {
 	width: 100%;
-	background: #f5f5f5;
-	color: black;
+	background: #384E96;    /*A little bit lighter navy blue*/ 
+	/* background: #1A114D; */ /* A little bit darker navy blue */
+
+	1a114D
+	color: white;
 	border: 1px solid #CCC;
 	height: 800px;
 	margin: 90px auto;
@@ -108,7 +114,9 @@ NAV BAR
 	height: 50px;
 	z-index: 10;
 	width: 100%;
-	background: #C11B17;
+	/*background: #6B6564; /* A little bit lighter */
+	background: #303030; /* A little bit darker */
+
 }
 
 #bottom-nav .nav-bar {
@@ -121,7 +129,10 @@ NAV BAR
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
-	background: #C11B17;
+	/*background: #6B6564; /* A little bit lighter */
+	background: #303030; /* A little bit darker */
+
+
 }
 
 .nav-button-home:hover {
