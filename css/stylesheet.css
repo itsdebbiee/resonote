@@ -56,11 +56,7 @@ a
 	margin-bottom: 80px;
 }
 
-.shadow-bottom-nav {
-  -moz-box-shadow:    3px -3px 5px 2px #ccc;
-  -webkit-box-shadow: 3px -3px 5px 2px #ccc;
-  box-shadow:         3px -3px 5px 2px #ccc;
-}
+
 
 .center {
 	margin: auto;
@@ -94,13 +90,11 @@ HOME
 	width: 100%;
 	background: #384E96;    /*A little bit lighter navy blue*/ 
 	/* background: #1A114D; */ /* A little bit darker navy blue */
-
-	1a114D
 	color: white;
 	border: 1px solid #CCC;
 	height: 800px;
 	margin: 70px auto;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 /*
@@ -116,7 +110,6 @@ NAV BAR
 	width: 100%;
 	/*background: #6B6564; /* A little bit lighter */
 	background: #303030; /* A little bit darker */
-
 }
 
 #bottom-nav .nav-bar {
@@ -131,8 +124,6 @@ NAV BAR
 .navbar-fixed-bottom, .navbar-fixed-top {
 	/*background: #6B6564; /* A little bit lighter */
 	background: #303030; /* A little bit darker */
-
-
 }
 
 .nav-button-home:hover {
@@ -155,13 +146,25 @@ NAV BAR
 	opacity: 0.7;
 }
 
-#wb-icon, #flag-icon, #playlist-icon, #settings-icon {
+#home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
 	height:30px;
 	width: 30px;
+	margin: 0px auto;
+	display: block;
 }
 
-#home-icon {
-	height: 40px;
+.nav-text {
+	display:block;
+	color: white;
+	font-weight: lighter;
+	margin: 0px auto;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: none;
+	font-size: 13px;
+}
+
+.navbar .nav>li>a {
+	padding: 10px 10px 5px;
 }
 
 /*
@@ -179,9 +182,6 @@ Word Bank
 .wb-title {
 	margin-top: 90px;
 }
-
-
-
 
 /*
 Song Pages
