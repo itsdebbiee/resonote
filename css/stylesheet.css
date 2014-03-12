@@ -99,7 +99,7 @@ HOME
 	color: white;
 	border: 1px solid #CCC;
 	height: 800px;
-	margin: 90px auto;
+	margin: 70px auto;
 	margin-bottom: 80px;
 }
 
@@ -155,24 +155,13 @@ NAV BAR
 	opacity: 0.7;
 }
 
-.nav-bar .nav-button-home a {
-	background:url("img/homeicon.png") no-repeat 0px -2px transparent;
-	z-index: 15;
-}
-
-.nav-bar .nav-button-search a {
-	background:url("/img/searchicon.png") no-repeat 0px -2px transparent;
-	z-index: 15;
-}
-
-.nav-bar .nav-button-address a {
-	background:url("img/addressbookicon.png") no-repeat 0px -2px transparent;
-	z-index: 15;
-}
-
-#home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
+#wb-icon, #flag-icon, #playlist-icon, #settings-icon {
 	height:30px;
 	width: 30px;
+}
+
+#home-icon {
+	height: 40px;
 }
 
 /*
