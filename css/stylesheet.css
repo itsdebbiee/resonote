@@ -18,6 +18,10 @@ html, body {
 	background: #ededed;
 }
 
+button {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
 .gray {
 	color: #3f3f3f;
 }
@@ -486,7 +490,8 @@ PLAYLIST
 ====================================== */
 
 #myPlaylist button {
-	background: red;
+	background: #D80000;
+	font-family: 'Lato', Arial, sans-serif;
 }
 
 .sound-quandcest, .sound-sympa, .sound-matete, .sound-quelquun, .sound-tous, .sound-papa {
