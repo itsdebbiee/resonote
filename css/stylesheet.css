@@ -14,12 +14,17 @@ html, body {
 	cursor: crosshair;
 	font-family: Lato, sans-serif;
 	color: white;
+	font-family: 'Open Sans', sans-serif;
+	background: #ededed;
 }
 
 a:hover {
 	cursor: crosshair;
 }
-a
+
+a {
+	color: #7bc5c7;
+}
 
 .header {
 	height: 70px;
@@ -37,11 +42,9 @@ a
 }
 
 #resonote-logo {
-	height: 75px;
-	width: 125px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
+	height: 50px;
+	margin: 10px 10px;
+	margin-left: 0px;
 }
 
 .mycontent {
@@ -66,8 +69,20 @@ a
 .nav-bar > .active > a {
   color: #f5f5f5;
   	background-color: #6B6564;
-
   /*background-color: #008080; */
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(Lato-Reg.ttf);
+}
+
+h4 {
+	color: #7bc5c7;
 }
 
 /*
@@ -77,36 +92,63 @@ HOME
 	-webkit-border-radius: 250px;
 	-moz-border-radius: 250px;
 	border-radius: 250px;
-	border: 2px solid #2a2a2a;
+	border: 3px solid #ededed;
 	height: 100px;
 	width: 100px;
 	position: absolute;
-	top: 220px;
-	left: 50%;
+	top: 175px;
+	left: 3%;
 }
 
 .content-home {
 	width: 100%;
 	background: #ededed;    /*384E96 A little bit lighter navy blue*/ 
 	/* background: #1A114D; */ /* A little bit darker navy blue */
-	color: white;
-	height: 600px;
+	color: #3f3f3f;
+	height: 450px;
 	margin: 70px auto;
 	margin-bottom: 60px;
 }
 
 .home-pic {
 	width: 100%;
+	height: 170px;
 	position: relative;
 	top: 0;
 	left: 0;
-	border-bottom: 1px solid #2a2a2a;
+	border-bottom: 1px solid #ededed;
 }
 
+/*.home-text {
+	position: relative;
+	margin-top: 5px;
+	margin-right: 20px;
+}*/
+
+.name {
+	display:block;
+	float: left;
+	position: ;
+}
+
+.home-row {
+	position: relative;
+	margin-top: 5px;
+	margin-right: 20px;
+}
 
 /*
 NAV BAR
 ====================================== */
+
+.sign-out {
+	font-size: 12px;
+	font-weight: lighter;
+	line-height: 75px;
+	margin-right: 5px;
+	margin-bottom: -5px;
+	font-family: 'Lato', Arial, sans-serif;
+}
 
 #bottom-nav {
 	position: fixed;
@@ -133,26 +175,6 @@ NAV BAR
 	background: #303030; /* A little bit darker */
 }
 
-.nav-button-home:hover {
-	opacity: 0.7;
-}
-
-.nav-button-wb:hover {
-	opacity: 0.7;
-}
-
-.nav-button-flag:hover {
-	opacity: 0.7;
-}
-
-.nav-button-playlist:hover {
-	opacity: 0.7;
-}
-
-.nav-button-settings:hover {
-	opacity: 0.7;
-}
-
 #home-icon, #wb-icon, #flag-icon, #playlist-icon, #settings-icon {
 	height:30px;
 	width: 30px;
@@ -174,6 +196,27 @@ NAV BAR
 	padding: 10px 10px 5px;
 }
 
+.navbar .active {
+	color: black;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: #e0e0e0;
+} 
+
+.navbar-default .navbar-nav > .active{
+
+  	background: #151515;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+
+    background: #151515;
+ }
+
 /*
 Word Bank
 ====================================== */
@@ -190,13 +233,31 @@ Word Bank
 	margin-top: 90px;
 }
 
+.scroll-box-wb {
+	height: 100px;
+	overflow: scroll;
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
 /*
 Song Pages
 ====================================== */
+.song-container {
+	width: 100%;
+	background: #ededed;
+	height: 650px;
+}
+
+#ouest-reveal, #sympathique-reveal, #quand-reveal, #quel-reveal, #tous-reveal, #papa-reveal {
+	margin-top: -15px;
+}
+
 .scroll-box {
 	overflow: scroll;
-	height: 400px;
-	width: 350px;
+	height: 210px;
+	width: 300px;
 	display: block;
 	margin: auto;
 }
@@ -206,7 +267,7 @@ Song Pages
 }
 
 .soundcloud-player {
-	margin-top: 90px;
+	margin-top: 20px;
 }
 
 .content-songs {
@@ -264,6 +325,12 @@ Song Pages
 	text-transform: uppercase;
 }
 
+.med-text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
 .add-icon {
 	height:20px;
 	width:20px;
@@ -272,6 +339,7 @@ Song Pages
 
 .btn {
 	background:#7bc5c7;
+	font-weight: lighter;
 }
 
 .none {
@@ -351,3 +419,16 @@ PLAYLIST
 #myPlaylist button {
 	background: red;
 }
+
+/*
+About
+====================================== */
+.settings-content {
+	background: #ededed;
+	height: 650px;
+}
+
+.settings-margin {
+	margin-left: 10px;
+}
+

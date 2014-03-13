@@ -51,6 +51,7 @@
 <!-- Top Nav -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<a href="home.html"><img id="resonote-logo" src="img/resWHITE.png" alt="Resonote Logo"/></a>
+	<p class="pull-right uppercase sign-out"><a href="login.html">Sign Out</a></p>
 </nav>	<!-- End Top Nav -->
 
 
@@ -62,7 +63,7 @@
 			<li class="nav-button-wb"><a href="#wordbank" data-toggle="tab"><img class="data-responsive" id="wb-icon" src="img/hardbound.png" alt="Word Bank"/><span class="nav-text">Word Bank</span></a></li>
 			<li class="nav-button-flag"><a href="#allsongs" data-toggle="tab"><img class="img-responsive" id="flag-icon" src="img/music108.png" alt="All Songs Icon"/><span class="nav-text">Songs</span></a></li>
 			<li class="nav-button-playlist"><a href="#playlist" data-toggle="tab"><img class="img-responsive" id="playlist-icon" src="img/music144.png" alt="Playlist Icon"/><span class="nav-text">Favorites</span></a></li>
-			<li class="nav-button-settings"><a href="#settings" data-toggle="tab"><img class="img-responsive" id="settings-icon" src="img/information31.png" alt="Settings Icon"/><span class="nav-text">Other</span></a></li>
+			<li class="nav-button-settings"><a href="#settings" data-toggle="tab"><img class="img-responsive" id="settings-icon" src="img/information31.png" alt="Settings Icon"/><span class="nav-text">About</span></a></li>
 	   </ul>
   </div>
 </nav> <!-- End Bottom Nav -->
@@ -73,15 +74,19 @@
 		<!-- Home -->
 		<div class="tab-pane active" id="home">
 			
-				<img src="img/eiffel-bw.jpg" alt="Eiffel Tower BnW" class="home-pic"/>
+				<img src="img/eiffel.jpg" alt="Eiffel Tower BnW" class="home-pic"/>
 				<img class="center galit" src="img/troy.jpg" alt="User Image"/>
+				<div class="row home-row">
+					<h2 class="text-center home-text pull-right">Bienvenue,</br><span style="font-size:16px; margin-top:-15px;">Troy Campbell</span></h2>
+				
+				</div>
 				<!--<p class="text-center"><strong>Chantez.  Écoutez.  Vivez.</strong> </p>-->
 			
 		</div> <!-- End Home -->
 					  
 		<!-- Word Bank -->
 		<div class="tab-pane" id="wordbank">
-			<h1 class="text-center">Word Bank</h1>
+			<h2 class="text-center">Word Bank</h2>
 			<ul class="nav nav-tabs">
 			  <li><a href="#easy" data-toggle="tab">Easy</a></li>
 			  <li><a href="#intermed" data-toggle="tab">Intermediate</a></li>
@@ -93,21 +98,27 @@
 			  <div class="tab-pane" id="easy">
 			  	<div id ="hold-easy-wb">
 			  		<p id="easy-wb">
-			  			<p id='eBankEmpty'> You have not added any Beginner phrases! </p> 
+			  			<div class="scroll-box-wb">
+			  				<p id='eBankEmpty'> You have not added any Beginner phrases! </p> 
+			  			</div>
 			  		</p>
 			  	</div> 
 			  </div>
 			  <div class="tab-pane" id="intermed">
 			  	<div id ="hold-int-wb">
 			  		<p id="int-wb">
-						<p id='iBankEmpty'> You have not added any Intermediate phrases! </p> 
+			  			<div class="scroll-box-wb">
+							<p id='iBankEmpty'> You have not added any Intermediate phrases! </p> 
+						</div>
 			  		</p>
 			  	</div>
 			  </div>
 			  <div class="tab-pane" id="exp">
 			  	<div id ="hold-exp-wb">
 			  		<p id="exp-wb">
-			  			<p id='aBankEmpty'> You have not added any Advanced phrases! </p> 
+			  			<div class="scroll-box-wb">
+			  				<p id='aBankEmpty'> You have not added any Advanced phrases! </p> 
+			  			</div>
 			  		</p>
 			  	</div> 
 			  </div>
@@ -117,7 +128,8 @@
 					  
 		<!-- All Songs -->
 		<div class="tab-pane" id="allsongs">
-		<h1 class="text-center">All Songs</h1>
+		<div class="song-container"><!-- begin song container-->
+		<h2 class="text-center">All Songs</h2>
 
 				<ul class="nav nav-tabs">
 				  <li class="active"><a href="#begsongs" data-toggle="tab">Beginner</a></li>
@@ -135,13 +147,15 @@
 
 					  	<!-- Ou Est Ma Tete -->
 					  	<div id="ouest-reveal" class="none">
+					  		
 					  		<p class="back"><a href="#"><< Back to Beginner Songs </a></p>
 
 						<div class = "sound-matete">
 
-					  		<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/3804042&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+					  		<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/3804042&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
 					  	</div> 
+
 
 							<p class="line">
 
@@ -149,7 +163,7 @@
 								
 							</p>
 
-					  		<p><strong>French:</strong></p>
+							<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
 
 
@@ -319,7 +333,7 @@
 					  		<div class = "sound-sympa">
 					  		 
 					  			
-					  				<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/9011259&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+					  				<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/9011259&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 					  		
 					  		</div> 
 							
@@ -330,7 +344,7 @@
 
 
 
-					  		<p><strong>French:</strong></p>
+					  		<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
 							<div class="scroll-box">
 					  		<p class="line">
@@ -466,7 +480,7 @@
 
 							<div class = "sound-quandcest">
 
-								<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120599734&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+								<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120599734&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
 							</div> 
 
@@ -474,7 +488,7 @@
 								<button type="button" class="btn btn-default add-quandcest" style="color:white;">Add to Favorites</button>
 							</p>
 
-							<p><strong>French:</strong></p>
+							<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
 
 							<div class="scroll-box">
@@ -616,11 +630,11 @@
 
 						<!-- Quelqu'un a Touché Ma Femme -->
 						<div id="quel-reveal" class="none">
-							<p class="back1"><a href="#"> Back to Intermediate Songs </a></p>
+							<p class="back1"><a href="#"><< Back to Intermediate Songs </a></p>
 							
 						<div class = "sound-quelquun">
 
-							<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/133949618&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+							<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/133949618&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
 						</div> 
 
@@ -630,92 +644,90 @@
 
 
 
-							<p><strong>French:</strong></p>
+							<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
+							<div class="scroll-box">
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle a tout perdu, mais elle a bien vécu</span><br><span class='eng-int'>Elle at tout perdu, mais elle a bien vécu</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle a tout perdu, mais elle a bien vécu</span></a>
 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle a tout perdu, mais elle a bien vécu</span><br><span class='eng-int'>Elle at tout perdu, mais elle a bien vécu</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle a tout perdu, mais elle a bien vécu</span></a>
+								</p> 
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Obligé d'être gentil</span><br><span class='eng-int'>Obliged to be kind</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Obligé d'être gentil</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quand on est pauvre est petit</span><br><span class='eng-int'>When one is small and poor</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quand on est pauvre est petit</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle est trop jeune pour crever</span><br><span class='eng-int'>She is too young to burn out</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est trop jeune pour crever</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle est trop vieille pour voler</span><br><span class='eng-int'>She is too old to steal</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est trop vieille pour voler</span></a>
+								</p>
+					
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Mais elle se sent vide</span><br><span class='eng-int'>But she feels empty</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Mais elle se sent vide</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Comme un condom de vieux pépé</span><br><span class='eng-int'>Like an old grandpa's condom</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Comme un condom de vieux pépé</span></a>
+								</p>
 
-							</p> 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Obligé d'être gentil</span><br><span class='eng-int'>Obliged to be kind</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Obligé d'être gentil</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quand on est pauvre est petit</span><br><span class='eng-int'>When one is small and poor</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quand on est pauvre est petit</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle est trop jeune pour crever</span><br><span class='eng-int'>She is too young to burn out</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est trop jeune pour crever</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle est trop vieille pour voler</span><br><span class='eng-int'>She is too old to steal</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est trop vieille pour voler</span></a>
-							</p>
-				
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Mais elle se sent vide</span><br><span class='eng-int'>But she feels empty</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Mais elle se sent vide</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Comme un condom de vieux pépé</span><br><span class='eng-int'>Like an old grandpa's condom</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Comme un condom de vieux pépé</span></a>
-							</p>
+								</br>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+								</p> 
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+								</p>
+								<br> 
 
-							</br>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
-							</p> 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
-							</p>
-							<br> 
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Tomber amoureux</span><br><span class='eng-int'>to fall in love</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Tomber amoureux</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est comme un mal de tête </span><br><span class='eng-int'>Is like a sickness of the head</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est comme un mal de tête </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Ça vient et ça passe</span><br><span class='eng-int'>It comes and it goes</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Ça vient et ça passe</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est ça qu'elle m'a dit </span><br><span class='eng-int'>That is what she told me</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est ça qu'elle m'a dit </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Il faut soigner les pauvres </span><br><span class='eng-int'>One must take care of the poor</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Il faut soigner les pauvres </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Et les mouches aussi</span><br><span class='eng-int'>And the flies too</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Et les mouches aussi</span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est ça qu'elle m'a dit </span><br><span class='eng-int'>That is what she told me</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est ça qu'elle m'a dit </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Une fois dans un lit </span><br><span class='eng-int'>One time in a bed</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Une fois dans un lit </span></a>
+								</p>
 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Tomber amoureux</span><br><span class='eng-int'>to fall in love</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Tomber amoureux</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est comme un mal de tête </span><br><span class='eng-int'>Is like a sickness of the head</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est comme un mal de tête </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Ça vient et ça passe</span><br><span class='eng-int'>It comes and it goes</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Ça vient et ça passe</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est ça qu'elle m'a dit </span><br><span class='eng-int'>That is what she told me</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est ça qu'elle m'a dit </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Il faut soigner les pauvres </span><br><span class='eng-int'>One must take care of the poor</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Il faut soigner les pauvres </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Et les mouches aussi</span><br><span class='eng-int'>And the flies too</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Et les mouches aussi</span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>C'est ça qu'elle m'a dit </span><br><span class='eng-int'>That is what she told me</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">C'est ça qu'elle m'a dit </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Une fois dans un lit </span><br><span class='eng-int'>One time in a bed</span><button type='button' class='btn add-int btn-default btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Une fois dans un lit </span></a>
-							</p>
+								</br>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+								</p> 
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+								</p>
+								<br> 
 
-							</br>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
-							</p> 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
-							</p>
-							<br> 
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a fait rêver </span><br><span class='eng-int'>She made me dream</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a fait rêver </span></a>
 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a fait rêver </span><br><span class='eng-int'>She made me dream</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a fait rêver </span></a>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>She is beautiful like fire </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est jolie comme du feu </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a fait vraiment peur </span><br><span class='eng-int'>She really scared me</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a fait vraiment peur </span></a>
 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>She is beautiful like fire </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle est jolie comme du feu </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a fait vraiment peur </span><br><span class='eng-int'>She really scared me</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a fait vraiment peur </span></a>
-
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle a l'odeur des fleurs </span><br><span class='eng-int'>She has the scent of flowers</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle a l'odeur des fleurs </span></a>
-							</p>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a dit que les mecs aggressifs </span><br><span class='eng-int'>She told me that agressive guys</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a dit que les mecs aggressifs </span></a>
-
-
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle a l'odeur des fleurs </span><br><span class='eng-int'>She has the scent of flowers</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle a l'odeur des fleurs </span></a>
+								</p>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Elle m'a dit que les mecs aggressifs </span><br><span class='eng-int'>She told me that agressive guys</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Elle m'a dit que les mecs aggressifs </span></a>
 
 
 
@@ -728,27 +740,30 @@
 
 
 
-<!-- A;SDLFKJA;SLDFJA --> 
-
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Ils ont des problèmes avec leur petit louis</span><br><span class='eng-int'>They have problems with their little dicks</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Ils ont des problèmes avec leur petit louis</span></a>
-							</p>
 
 
+	<!-- A;SDLFKJA;SLDFJA --> 
 
-
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Ils ont des problèmes avec leur petit louis</span><br><span class='eng-int'>They have problems with their little dicks</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Ils ont des problèmes avec leur petit louis</span></a>
+								</p>
 
 
 
 
-							</br>
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
 
-							<p class="line-int">
-								<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
-							</p>
-							<br> 
+
+
+
+								</br>
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+
+								<p class="line-int">
+									<a href="#" data-toggle="popover" class="popup" data-placement="top" data-content="<span class='french3'>Quelqu'un a touché ma femme </span><br><span class='eng-int'>Someone touched my wife</span><button type='button' class='btn btn-default add-int btn-xs'><img class='add-icon' src='img/add-icon.png'/><span class='small-text'>Add to Word Bank</span></button><button type='button' class='btn btn-default add-hide btn-xs'><img class='add-icon' src='img/delete.png'/></button>"><span class="french-int">Quelqu'un a touché ma femme </span></a>
+								</p>
+								<br> 
+							</div><!-- end scroll box-->
 
 
 
@@ -774,7 +789,7 @@
 
 							<div class = "sound-tous">
 
-								<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106903204&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+								<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106903204&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
 							</div> 
 
@@ -784,7 +799,7 @@
 
 
 
-							<p><strong>French:</strong></p>
+							<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
 
 							<p class="line-exp">
@@ -817,14 +832,14 @@
 
 							<div class = "sound-papa">
 
-								<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/103028460&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+								<iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/103028460&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
 							</div> 
 							<p class="line">
 								<button type="button" class="btn btn-default add-papa" style="color:white;">Add to Favorites</button>
 							</p>
 
-							<p><strong>French:</strong></p>
+							<div class="text-center med-text"><strong>Lyrics:</strong></div>
 							<span class="small-text">Tap to view English translation</span>
 
 						<div class="scroll-box">
@@ -1028,8 +1043,10 @@
 
 					</div><!-- End Text Center -->
 				  </div> <!-- End Expert Songs -->
+
+
 				</div><!-- End Tab Panes -->
-			
+			</div><!-- end song container -->
 
 
 		</div> <!-- End All Songs -->
@@ -1038,8 +1055,8 @@
 		<div class="tab-pane" id="playlist">
 			<div class="small-12 small-centered columns soundcloud-player">
 
-		<div id = 'contain-fav-mess'>
-			<h1> Your Favorites </h1> 
+		<div id = "contain-fav-mess">
+			<h2> Your Favorites </h2> 
 			<button style='color: white;width:100px; height: 25px; padding: 2px 5px' class='delete-playlist btn btn-default'>Clear Playlist</button>	
 			<h4 id = 'emptySongList'> You have no favorites </h4>     
 		</div>    
@@ -1066,52 +1083,53 @@
 
 		<!-- Settings -->
 		<div class="tab-pane" id="settings">
-			<a href = "login.html"> 
-  				<h3> Sign Out </h3> 
-  			</a> 
-  			
-  			<div class = "ratings" id = "begRat"> 
-  				<h4> Beginner Songs </h4>
-  				<p> Meet one or more of the following criterion:</p>
-  				<ul> 
-  					<li> Repetitive song structure </li> 
-  					<li> Basic vocabulary </li> 
-  					<li> Academic or formal language </li> 
-  					<li> Easy-to-follow tempo </li>
-  					<li> Simple subject matter </li>
-  				</ul>
-  			</div> 
+  			<div class="settings-content">
+  				<div class="settings-margin">
+	  				<h4 style="color: #3f3f3f;">Find out what level you are using our guide below!</h4>
+			  			<div class = "ratings" id = "begRat"> 
+			  				<h4> Beginner Songs </h4>
+			  				<p> Meets one or more of the following criterion:</p>
+			  				<ul> 
+			  					<li> Repetitive song structure </li> 
+			  					<li> Basic vocabulary </li> 
+			  					<li> Academic or formal language </li> 
+			  					<li> Easy-to-follow tempo </li>
+			  					<li> Simple subject matter </li>
+			  				</ul>
+			  			</div> 
 
-  			<div class = "ratings" id = "intRat"> 
-			<h4> Intermediate Songs </h4>
-  				<p> Meet one or more of the following criterion:</p>
-  				<ul> 
-  					<li> Repetitive song structure </li> 
-  					<li> Basic vocabulary </li> 
-  					<li> Academic or formal language </li> 
-  					<li> Easy-to-follow tempo </li>
-  					<li> Simple subject matter </li>
-  				</ul>
+			  			<div class = "ratings" id = "intRat"> 
+						<h4> Intermediate Songs </h4>
+			  				<p> Meets one or more of the following criterion:</p>
+			  				<ul> 
+			  					<li> Repetitive song structure </li> 
+			  					<li> Basic vocabulary </li> 
+			  					<li> Academic or formal language </li> 
+			  					<li> Easy-to-follow tempo </li>
+			  					<li> Simple subject matter </li>
+			  				</ul>
 
-  			</div> 
+			  			</div> 
 
-  			<div class = "ratings" id = "expRat"> 
-			<h4> Expert Songs </h4>
-  				<p> Meet one or more of the following criterion:</p>
-  				<ul> 
-  					<li> Irregular song structure </li> 
-  					<li> Advanced vocabulary and tenses </li> 
-  					<li> Street French </li> 
-  					<li> Quick tempo </li>
-  					<li> Complex subject matter </li>
-  				</ul>
+			  			<div class = "ratings" id = "expRat"> 
+						<h4> Expert Songs </h4>
+			  				<p> Meets one or more of the following criterion:</p>
+			  				<ul> 
+			  					<li> Irregular song structure </li> 
+			  					<li> Advanced vocabulary and tenses </li> 
+			  					<li> Street French </li> 
+			  					<li> Quick tempo </li>
+			  					<li> Complex subject matter </li>
+			  				</ul>
+			  			</div> 
 
-  			</div> 
-		</div> <!-- End Settings -->
+				</div><!--end settings margin-->
+
+			</div> <!-- End Settings content-->
 
 
 
-	</div> <!-- End Tab Content -->
+		</div> <!-- End Tab Content -->
 
 </div> <!-- End Container -->
 
