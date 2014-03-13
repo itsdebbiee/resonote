@@ -18,12 +18,25 @@ html, body {
 	background: #ededed;
 }
 
+.gray {
+	color: #3f3f3f;
+}
+
 a:hover {
 	cursor: crosshair;
 }
 
+.lato {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
 a {
 	color: #7bc5c7;
+}
+
+.georgia {
+	font-family: Georgia, serif;
+	font-weight: lighter;
 }
 
 .header {
@@ -37,12 +50,12 @@ a {
 }
 
 .contain {
-	margin-top: 70px;
+	margin-top: 65px;
 	display: block;
 }
 
 #resonote-logo {
-	height: 50px;
+	height: 45px;
 	margin: 10px 10px;
 	margin-left: 0px;
 }
@@ -85,6 +98,11 @@ h4 {
 	color: #7bc5c7;
 }
 
+h2 {
+	font-family: Georgia, serif;
+	font-weight: lighter;
+}
+
 /*
 HOME
 ====================================== */
@@ -92,12 +110,16 @@ HOME
 	-webkit-border-radius: 250px;
 	-moz-border-radius: 250px;
 	border-radius: 250px;
-	border: 3px solid #ededed;
+	border: 5px solid #ededed;
 	height: 100px;
 	width: 100px;
 	position: absolute;
-	top: 175px;
-	left: 3%;
+	top: 170px;
+	left: 33%;
+}
+
+#home .row {
+	margin-left: 0px;
 }
 
 .content-home {
@@ -106,24 +128,18 @@ HOME
 	/* background: #1A114D; */ /* A little bit darker navy blue */
 	color: #3f3f3f;
 	height: 450px;
-	margin: 70px auto;
+	margin: 65px auto;
 	margin-bottom: 60px;
 }
 
 .home-pic {
 	width: 100%;
-	height: 170px;
+	height: 160px;
 	position: relative;
 	top: 0;
 	left: 0;
 	border-bottom: 1px solid #ededed;
 }
-
-/*.home-text {
-	position: relative;
-	margin-top: 5px;
-	margin-right: 20px;
-}*/
 
 .name {
 	display:block;
@@ -131,20 +147,40 @@ HOME
 	position: ;
 }
 
+.home-text {
+	margin-top: 55px;
+	font-family: 'Georgia', serif;
+	font-style:italic;
+}
+
+.city {
+	font-size: 12px;
+}
+
 .home-row {
-	position: relative;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #dbdbdb),color-stop(0.6, #fafafa));
+    background-image: -moz-linear-gradient(center top,#dbdbdb 0%,#fafafa 100%);
+    background-image: -o-linear-gradient(top,#dbdbdb,#fafafa);
+	height: 200px;
 	margin-top: 5px;
-	margin-right: 20px;
+	border-top: 1px solid #d3d3d3;
 }
 
 /*
 NAV BAR
 ====================================== */
+.navbar, .navbar-default, .navbar-fixed-top {
+	height: 65px;
+	box-shadow: 6px 0 20px -5px #222 , -6px 0 20px -5px #222;
+	-webkit-box-shadow: 6px 0 20px -5px #222 , -6px 0 20px -5px #222;
+	-moz-box-shadow: 6px 0 20px -5px #222 , -6px 0 20px -5px #222;
+	-o-box-shadow: 6px 0 20px -5px #222 , -6px 0 20px -5px #222;
+}
 
 .sign-out {
 	font-size: 12px;
-	font-weight: lighter;
-	line-height: 75px;
+	font-weight: normal;
+	line-height: 65px;
 	margin-right: 5px;
 	margin-bottom: -5px;
 	font-family: 'Lato', Arial, sans-serif;
