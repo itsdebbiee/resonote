@@ -155,6 +155,7 @@ HOME
 
 .city {
 	font-size: 12px;
+	color: #7bc5c7;
 }
 
 .home-row {
@@ -488,15 +489,37 @@ PLAYLIST
 	background: red;
 }
 
+.sound-quandcest, .sound-sympa, .sound-matete, .sound-quelquun, .sound-tous, .sound-papa {
+	margin: 10px 0px 5px;
+}
+
+.delete-sympa, .delete-matete, .delete-quelquun, .delete-tous, .delete-papa, .delete-quandcest {
+	float:right;
+	margin-bottom: 10px;
+}
+
 /*
 About
 ====================================== */
 .settings-content {
 	background: #ededed;
-	height: 650px;
+	height: 930px;
 }
 
 .settings-margin {
 	margin-left: 10px;
 }
 
+.logo-about {
+	display:block;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+
+.about-text {
+	margin-top: 5px;
+}
+
+.p2 {
+	padding-bottom: 10px;
+}
