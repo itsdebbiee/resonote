@@ -161,7 +161,7 @@ HOME
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #dbdbdb),color-stop(0.6, #fafafa));
     background-image: -moz-linear-gradient(center top,#dbdbdb 0%,#fafafa 100%);
     background-image: -o-linear-gradient(top,#dbdbdb,#fafafa);
-	height: 200px;
+	height: 300px;
 	margin-top: 5px;
 	border-top: 1px solid #d3d3d3;
 }
