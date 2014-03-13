@@ -167,7 +167,7 @@ $(document).ready(function() {
 	    alert("Added to your favorites!");
 		$("#myPlaylist").append("<div class= 'bank-sympa'>"); // Append new div 
 		$(".sound-sympa").clone().appendTo(".bank-sympa"); // Append to new div 
-		$(".bank-sympa").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px' class='delete-sympa btn btn-default'>Delete Song</button>"); // Append song to new div
+		$(".bank-sympa").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px;' class='delete-sympa btn btn-default'>Delete Song</button>"); // Append song to new div
 		$(".bank-sympa").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
@@ -197,7 +197,7 @@ $(document).ready(function() {
 		  alert("Added to your favorites!");
 		$("#myPlaylist").append("<div class= 'bank-matete'>"); // Append new div 
 		$(".sound-matete").clone().appendTo(".bank-matete"); // Append  song to new div 
-		$(".bank-matete").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px' class='delete-matete btn btn-default'>Delete Song</button>"); // Append delete-song to new div
+		$(".bank-matete").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px;' class='delete-matete btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-matete").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
@@ -223,7 +223,7 @@ $(document).ready(function() {
 		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-quandcest'>"); // Append new div  
 		$(".sound-quandcest").clone().appendTo(".bank-quandcest"); // Append  song to new div		
-		$(".bank-quandcest").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px' class='delete-quandcest btn btn-default'>Delete Song</button>"); // Append delete-song to new div
+		$(".bank-quandcest").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px;' class='delete-quandcest btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quandcest").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
 		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-quelquun'>"); // Append new div 
 		$(".sound-quelquun").clone().appendTo(".bank-quelquun"); // Append  song to new div 
-		$(".bank-quelquun").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px' class='delete-quelquun btn btn-default'>Delete Song</button>"); // Append delete-song to new div
+		$(".bank-quelquun").append("<button style='color:white; width:100px; height: 25px; padding: 3px 10px;' class='delete-quelquun btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-quelquun").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message
 
@@ -274,7 +274,7 @@ $(document).ready(function() {
 		  alert("Added to your favorites!"); 
 		$("#myPlaylist").append("<div class= 'bank-tous'>"); // Append new div  
 		$(".sound-tous").clone().appendTo(".bank-tous"); // Append  song to new div
-		$(".bank-tous").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px' class='delete-tous btn btn-default'>Delete Song</button>"); // Append delete-song to new div
+		$(".bank-tous").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px;' class='delete-tous btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-tous").append("<br></div>"); // Close new div
 		$("#emptySongList").hide(); // Show message 
 
@@ -303,7 +303,7 @@ $(document).ready(function() {
 		$("#myPlaylist").append("<div class= 'bank-papa'>"); // Append new div 
 		console.log("Monkeys and hoes know where it goes");
 		$(".sound-papa").clone().appendTo(".bank-papa"); // Append  song to new div 
-		$(".bank-papa").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px' class='delete-papa btn btn-default'>Delete Song</button>"); // Append delete-song to new div
+		$(".bank-papa").append("<button style='color: white; width:100px; height: 25px; padding: 3px 10px;' class='delete-papa btn btn-default'>Delete Song</button>"); // Append delete-song to new div
 		$(".bank-papa").append("<br></div>"); // Close new div 
 		$("#emptySongList").hide(); // Show message 
 

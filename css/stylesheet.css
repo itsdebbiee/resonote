@@ -291,6 +291,10 @@ Song Pages
 	height: 650px;
 }
 
+.add-sympa:hover, .add-quelquun:hover, .add-matete:hover, .add-quandcest:hover, .add-tous:hover, .add-papa:hover {
+	background:#57b5b8;
+}
+
 #ouest-reveal, #sympathique-reveal, #quand-reveal, #quel-reveal, #tous-reveal, #papa-reveal {
 	margin-top: -15px;
 }
@@ -451,19 +455,6 @@ Song Pages
 	margin: auto; 
 }
 
-.Logo-Login {
-	margin: auto;
-	text-align: center;
-	width: 40%;
-	height: 30%;
-}
-
-.form {
-	margin: auto;
-	display:block;
-	text-align: center;
-}
-
 #eBankEmpty, #iBankEmpty, #aBankEmpty {
 	margin: auto;
 	display:block;
@@ -495,12 +486,13 @@ PLAYLIST
 }
 
 .sound-quandcest, .sound-sympa, .sound-matete, .sound-quelquun, .sound-tous, .sound-papa {
-	margin: 10px 0px 5px;
+	margin: 10px 5px 5px;
 }
 
 .delete-sympa, .delete-matete, .delete-quelquun, .delete-tous, .delete-papa, .delete-quandcest {
 	float:right;
 	margin-bottom: 10px;
+	margin-right: 5px;
 }
 
 /*
@@ -528,3 +520,57 @@ About
 .p2 {
 	padding-bottom: 10px;
 }
+
+/*
+Login
+====================================== */
+.login-styles {
+	background: #303030;
+}
+
+.Logo-Login {
+	margin: 50px auto 0px;
+	display: block;
+	height: 80px;
+}
+
+.form {
+	margin: auto;
+	display:block;
+	text-align: center;
+}
+
+.signin-btn {
+	width: 220px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.learn {
+	font-size: 9px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	color: #7bc5c7;
+	text-shadow: 0 2px 2px rgba(255,255,255,0.25);
+}
+
+.non-member {
+	font-size: 10px;
+	width: 220px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: lighter;
+}
+
+.non-member a:hover {
+	color: #d3d3d3;
+}
+
+.signin-btn:hover {
+	background:#57b5b8;
+}
+
+

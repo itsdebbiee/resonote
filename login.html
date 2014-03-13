@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js login-styles" lang="en" > <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="login-styles">
 
 <!--
 
@@ -47,7 +47,8 @@
 
   --> 
 
-  <img src="img/Resonote.png" class = "Logo-Login"> 
+  <img src="img/res-w.png" class = "Logo-Login"> 
+  <div class="text-center uppercase lato learn">Learn French with Music</div>
 
   <form id="sign-data" class="form">
     <div id="mail_d" class="form-group">
@@ -63,9 +64,9 @@
       <input id="cpassword" type="password" class="form-control input-md" placeholder="Confirm Password" required="">
     </div>
     <div id="signin_d" class="form-group">
-      <a href = "home.html="signin" name="signin" class="btn btn-lg btn-block btn-info font_n" onclick="signed()"">Sign In</a>
+      <a href = "home.html" signin "name="signin" class="signin-btn btn btn-sm btn-block btn-info font_n" onclick="signed()"">Sign In</a>
     </div>
-    <div id="signup_d" class="form-group collapse in">
+    <div id="signup_d" class="form-group non-member collapse in">
       <a href = "home.html" id="signup" name="signup" class="font_n" data-toggle="collapse" data-target=".sud">Not a member? Enter your information above and press here to enter</a>
     </div>
   </form>
