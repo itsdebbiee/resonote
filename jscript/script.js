@@ -731,4 +731,6 @@ $("#tous1").on('click', function(){
 	ga('send', 'event', 'a', 'click', 'Version B song name clicked REAL', d.getTime());
 })
 
+ga('send', 'event', 'image', 'click', 'Image clicked');
+
 
