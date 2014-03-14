@@ -495,6 +495,20 @@ PLAYLIST
 	margin-right: 5px;
 }
 
+.scroll-box-playlist {
+	height: 100px;
+	overflow: scroll;
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.playlist-content {
+	height: 400px;
+	overflow: scroll;
+	margin-top: 8px;
+}
+
 /*
 About
 ====================================== */
